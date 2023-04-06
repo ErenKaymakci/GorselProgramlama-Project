@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace GelismisATM
 {
-    public partial class Form1 : Form
+    public partial class UserControlAccountDetails : UserControl
     {
-        public Form1()
+        public UserControlAccountDetails()
         {
             InitializeComponent();
-            userControlAccountDetails1.Hide();
         }
 
-        private void HesapDetaylariClicked(object sender, EventArgs e)
+        private void UserControlAccountDetails_Load(object sender, EventArgs e)
         {
-            userControlAccountDetails1.Show();
-            userControlAccountDetails1.BringToFront();
+
         }
     }
 }
