@@ -29,28 +29,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userControl1 = new System.Windows.Forms.UserControl();
             this.SuspendLayout();
-            // 
-            // userControl1
-            // 
-            this.userControl1.Location = new System.Drawing.Point(459, 375);
-            this.userControl1.Name = "userControl1";
-            this.userControl1.Size = new System.Drawing.Size(8, 8);
-            this.userControl1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.userControl1);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Location = new System.Drawing.Point(15, 15);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
         }
-
-        private System.Windows.Forms.UserControl userControl1;
 
         #endregion
     }

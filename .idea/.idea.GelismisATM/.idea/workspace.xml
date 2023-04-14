@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1be5080-d302-4a26-8164-509188cc6a98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UserControlLogin.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserControlLogin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GelismisATM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GelismisATM.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlLogin.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +21,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectId" id="2NbJKNkcYccnyhmzYtcUdsHqrSu" />
   <component name="ProjectViewState">
@@ -74,7 +76,7 @@
       <updated>1679926789676</updated>
       <workItem from="1679926790643" duration="196000" />
       <workItem from="1679927175954" duration="71989000" />
-      <workItem from="1681479272396" duration="1257000" />
+      <workItem from="1681479272396" duration="6415000" />
     </task>
     <servers />
   </component>
