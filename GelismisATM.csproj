@@ -81,6 +81,9 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="UserControlAccounts.resx">
+          <DependentUpon>UserControlAccounts.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="UserControlLogin.resx">
           <DependentUpon>UserControlLogin.cs</DependentUpon>
         </EmbeddedResource>

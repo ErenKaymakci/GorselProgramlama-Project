@@ -1,3 +1,4 @@
+using System;
 using System.Windows.Forms;
 
 namespace GelismisATM
@@ -8,5 +9,6 @@ namespace GelismisATM
         {
             InitializeComponent();
         }
+        
     }
 }
