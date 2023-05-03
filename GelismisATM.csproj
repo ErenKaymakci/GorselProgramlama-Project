@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GelismisATM">
+      <HintPath>bin\Debug\GelismisATM.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,6 +85,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAccounts.Designer.cs">
+      <DependentUpon>UserControlAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLogin.Designer.cs">
+      <DependentUpon>UserControlLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlAccountDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -146,6 +161,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlAccounts.resx">
+      <DependentUpon>UserControlAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLogin.resx">
+      <DependentUpon>UserControlLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlAccountDetails.resx">
       <DependentUpon>UserControlAccountDetails.cs</DependentUpon>
     </EmbeddedResource>
