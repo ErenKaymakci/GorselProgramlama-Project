@@ -10,28 +10,21 @@ using System.Windows.Forms;
 
 namespace GelismisATM
 {
-    public partial class Form1 : Form
+    public partial class UserControlAccountDetails : UserControl
     {
-        public Form1()
+        public UserControlAccountDetails()
         {
             InitializeComponent();
 
-            userControlAccountDetails.Hide();
-            userControlAccountDetails.Enabled = false;
             userControlMenu.Hide();
             userControlMenu.Enabled = false;
         }
 
-        private void buttonAccountDetails_Click(object sender, EventArgs e)
-        {
-            userControlAccountDetails.Show();
-            userControlAccountDetails.Enabled = true;
-        }
-
-        private void buttonMenu_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
             userControlMenu.Show();
             userControlMenu.Enabled = true;
+            
         }
     }
 }
