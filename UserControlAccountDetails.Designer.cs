@@ -56,7 +56,6 @@
             this.labelTransaction3Date = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.userControlMenu = new GelismisATM.UserControlMenu();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRIban)).BeginInit();
             this.panelTransaction1.SuspendLayout();
             this.panelTransaction2.SuspendLayout();
@@ -387,7 +386,6 @@
             this.buttonBack.TabIndex = 14;
             this.buttonBack.Text = "GERİ DÖN";
             this.buttonBack.UseVisualStyleBackColor = false;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // panel4
             // 
@@ -405,20 +403,11 @@
             this.panel4.Size = new System.Drawing.Size(846, 222);
             this.panel4.TabIndex = 15;
             // 
-            // userControlMenu
-            // 
-            this.userControlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.userControlMenu.Location = new System.Drawing.Point(0, 0);
-            this.userControlMenu.Name = "userControlMenu";
-            this.userControlMenu.Size = new System.Drawing.Size(1024, 768);
-            this.userControlMenu.TabIndex = 16;
-            // 
             // UserControlAccountDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.Controls.Add(this.userControlMenu);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.panelTransaction3);
@@ -469,6 +458,5 @@
         private System.Windows.Forms.Label labelTransaction3Date;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Panel panel4;
-        private UserControlMenu userControlMenu;
     }
 }

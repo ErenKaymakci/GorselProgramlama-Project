@@ -15,16 +15,7 @@ namespace GelismisATM
         public UserControlAccountDetails()
         {
             InitializeComponent();
-
-            userControlMenu.Hide();
-            userControlMenu.Enabled = false;
         }
 
-        private void buttonBack_Click(object sender, EventArgs e)
-        {
-            userControlMenu.Show();
-            userControlMenu.Enabled = true;
-            
-        }
     }
 }

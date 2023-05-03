@@ -31,7 +31,6 @@
         {
             this.buttonMenu = new System.Windows.Forms.Button();
             this.buttonAccountDetails = new System.Windows.Forms.Button();
-            this.userControlAccountDetails = new GelismisATM.UserControlAccountDetails();
             this.userControlMenu = new GelismisATM.UserControlMenu();
             this.SuspendLayout();
             // 
@@ -48,7 +47,6 @@
             this.buttonMenu.TabIndex = 16;
             this.buttonMenu.Text = "MENÜ";
             this.buttonMenu.UseVisualStyleBackColor = false;
-            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
             // 
             // buttonAccountDetails
             // 
@@ -63,15 +61,6 @@
             this.buttonAccountDetails.TabIndex = 17;
             this.buttonAccountDetails.Text = "HESAP DETAYLARI";
             this.buttonAccountDetails.UseVisualStyleBackColor = false;
-            this.buttonAccountDetails.Click += new System.EventHandler(this.buttonAccountDetails_Click);
-            // 
-            // userControlAccountDetails
-            // 
-            this.userControlAccountDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.userControlAccountDetails.Location = new System.Drawing.Point(-5, -30);
-            this.userControlAccountDetails.Name = "userControlAccountDetails";
-            this.userControlAccountDetails.Size = new System.Drawing.Size(1024, 768);
-            this.userControlAccountDetails.TabIndex = 19;
             // 
             // userControlMenu
             // 
@@ -87,7 +76,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.userControlAccountDetails);
             this.Controls.Add(this.userControlMenu);
             this.Controls.Add(this.buttonAccountDetails);
             this.Controls.Add(this.buttonMenu);
@@ -103,6 +91,5 @@
         private System.Windows.Forms.Button buttonMenu;
         private System.Windows.Forms.Button buttonAccountDetails;
         private UserControlMenu userControlMenu;
-        private UserControlAccountDetails userControlAccountDetails;
     }
 }
