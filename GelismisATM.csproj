@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -110,6 +110,17 @@
     </Compile>
     <Compile Include="UserControlTextBoxIBAN.Designer.cs">
       <DependentUpon>UserControlTextBoxIBAN.cs</DependentUpon>
+    <Compile Include="UserControlAccountDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAccountDetails.Designer.cs">
+      <DependentUpon>UserControlAccountDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenu.Designer.cs">
+      <DependentUpon>UserControlMenu.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -146,6 +157,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlTextBoxIBAN.resx">
       <DependentUpon>UserControlTextBoxIBAN.cs</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControlAccountDetails.resx">
+      <DependentUpon>UserControlAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenu.resx">
+      <DependentUpon>UserControlMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,6 +177,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qr-code.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
