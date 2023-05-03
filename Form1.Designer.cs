@@ -43,10 +43,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonMenu;
-        private System.Windows.Forms.Button buttonAccountDetails;
-        private UserControlMenu userControlMenu;
-        private UserControlAccountDetails userControlAccountDetails;
     }
 }

@@ -15,23 +15,6 @@ namespace GelismisATM
         public Form1()
         {
             InitializeComponent();
-
-            userControlAccountDetails.Hide();
-            userControlAccountDetails.Enabled = false;
-            userControlMenu.Hide();
-            userControlMenu.Enabled = false;
-        }
-
-        private void buttonAccountDetails_Click(object sender, EventArgs e)
-        {
-            userControlAccountDetails.Show();
-            userControlAccountDetails.Enabled = true;
-        }
-
-        private void buttonMenu_Click(object sender, EventArgs e)
-        {
-            userControlMenu.Show();
-            userControlMenu.Enabled = true;
         }
     }
 }
