@@ -16,5 +16,10 @@ namespace GelismisATM
         {
             InitializeComponent();
         }
+
+        private void btnMenuExit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -133,12 +133,6 @@
     <Compile Include="UserControlAccountDetails.Designer.cs">
       <DependentUpon>UserControlAccountDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlMenu.Designer.cs">
-      <DependentUpon>UserControlMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControlIslemBitisEkrani.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +174,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IslemBitisEkrani.resx">
       <DependentUpon>IslemBitisEkrani.cs</DependentUpon>
@@ -211,9 +206,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlAccountDetails.resx">
       <DependentUpon>UserControlAccountDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlMenu.resx">
-      <DependentUpon>UserControlMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlIslemBitisEkrani.resx">
       <DependentUpon>UserControlIslemBitisEkrani.cs</DependentUpon>

@@ -65,24 +65,24 @@
             // 
             // labelAccountDetails
             // 
-            this.labelAccountDetails.AutoSize = true;
-            this.labelAccountDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccountDetails.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelAccountDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAccountDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.labelAccountDetails.Location = new System.Drawing.Point(350, 47);
+            this.labelAccountDetails.Location = new System.Drawing.Point(0, 0);
             this.labelAccountDetails.Name = "labelAccountDetails";
-            this.labelAccountDetails.Size = new System.Drawing.Size(349, 39);
+            this.labelAccountDetails.Size = new System.Drawing.Size(1024, 53);
             this.labelAccountDetails.TabIndex = 0;
             this.labelAccountDetails.Text = "HESAP DETAYLARI";
-            this.labelAccountDetails.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelAccountDetails.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // labelAccountType
             // 
             this.labelAccountType.AutoSize = true;
-            this.labelAccountType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccountType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAccountType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelAccountType.Location = new System.Drawing.Point(17, 39);
             this.labelAccountType.Name = "labelAccountType";
-            this.labelAccountType.Size = new System.Drawing.Size(157, 25);
+            this.labelAccountType.Size = new System.Drawing.Size(140, 24);
             this.labelAccountType.TabIndex = 1;
             this.labelAccountType.Text = "HESAP TÜRÜ";
             this.labelAccountType.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -90,11 +90,11 @@
             // labelCurrency
             // 
             this.labelCurrency.AutoSize = true;
-            this.labelCurrency.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurrency.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCurrency.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelCurrency.Location = new System.Drawing.Point(17, 73);
             this.labelCurrency.Name = "labelCurrency";
-            this.labelCurrency.Size = new System.Drawing.Size(148, 25);
+            this.labelCurrency.Size = new System.Drawing.Size(130, 24);
             this.labelCurrency.TabIndex = 2;
             this.labelCurrency.Text = "PARA BİRİMİ";
             this.labelCurrency.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -102,11 +102,11 @@
             // labelBalance
             // 
             this.labelBalance.AutoSize = true;
-            this.labelBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelBalance.Location = new System.Drawing.Point(17, 109);
             this.labelBalance.Name = "labelBalance";
-            this.labelBalance.Size = new System.Drawing.Size(94, 25);
+            this.labelBalance.Size = new System.Drawing.Size(82, 24);
             this.labelBalance.TabIndex = 3;
             this.labelBalance.Text = "BAKİYE";
             this.labelBalance.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -114,7 +114,7 @@
             // labelBalanceData
             // 
             this.labelBalanceData.AutoSize = true;
-            this.labelBalanceData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBalanceData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBalanceData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelBalanceData.Location = new System.Drawing.Point(210, 110);
             this.labelBalanceData.Name = "labelBalanceData";
@@ -126,7 +126,7 @@
             // labelCurrencyData
             // 
             this.labelCurrencyData.AutoSize = true;
-            this.labelCurrencyData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurrencyData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCurrencyData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelCurrencyData.Location = new System.Drawing.Point(210, 74);
             this.labelCurrencyData.Name = "labelCurrencyData";
@@ -138,7 +138,7 @@
             // labelAccountTypeData
             // 
             this.labelAccountTypeData.AutoSize = true;
-            this.labelAccountTypeData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccountTypeData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAccountTypeData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelAccountTypeData.Location = new System.Drawing.Point(210, 40);
             this.labelAccountTypeData.Name = "labelAccountTypeData";
@@ -149,7 +149,6 @@
             // 
             // pictureBoxQRIban
             // 
-            this.pictureBoxQRIban.Image = global::GelismisATM.Properties.Resources.qr_code;
             this.pictureBoxQRIban.Location = new System.Drawing.Point(665, 40);
             this.pictureBoxQRIban.Name = "pictureBoxQRIban";
             this.pictureBoxQRIban.Size = new System.Drawing.Size(130, 130);
@@ -160,7 +159,7 @@
             // labelIbanData
             // 
             this.labelIbanData.AutoSize = true;
-            this.labelIbanData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIbanData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIbanData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelIbanData.Location = new System.Drawing.Point(210, 144);
             this.labelIbanData.Name = "labelIbanData";
@@ -172,26 +171,25 @@
             // labelIban
             // 
             this.labelIban.AutoSize = true;
-            this.labelIban.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIban.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.labelIban.Location = new System.Drawing.Point(17, 143);
             this.labelIban.Name = "labelIban";
-            this.labelIban.Size = new System.Drawing.Size(64, 25);
+            this.labelIban.Size = new System.Drawing.Size(57, 24);
             this.labelIban.TabIndex = 8;
             this.labelIban.Text = "IBAN";
             this.labelIban.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelRecentTransactions
             // 
-            this.labelRecentTransactions.AutoSize = true;
-            this.labelRecentTransactions.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRecentTransactions.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRecentTransactions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.labelRecentTransactions.Location = new System.Drawing.Point(374, 314);
+            this.labelRecentTransactions.Location = new System.Drawing.Point(368, 290);
             this.labelRecentTransactions.Name = "labelRecentTransactions";
             this.labelRecentTransactions.Size = new System.Drawing.Size(292, 33);
             this.labelRecentTransactions.TabIndex = 10;
             this.labelRecentTransactions.Text = "SON HAREKETLER";
-            this.labelRecentTransactions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelRecentTransactions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelTransaction1
             // 
@@ -200,9 +198,9 @@
             this.panelTransaction1.Controls.Add(this.labelTransaction1Amount);
             this.panelTransaction1.Controls.Add(this.labelTransaction1Title);
             this.panelTransaction1.Controls.Add(this.labelTransaction1Date);
-            this.panelTransaction1.Location = new System.Drawing.Point(86, 365);
+            this.panelTransaction1.Location = new System.Drawing.Point(62, 342);
             this.panelTransaction1.Name = "panelTransaction1";
-            this.panelTransaction1.Size = new System.Drawing.Size(850, 80);
+            this.panelTransaction1.Size = new System.Drawing.Size(900, 80);
             this.panelTransaction1.TabIndex = 11;
             // 
             // labelTransaction1Balance
@@ -212,7 +210,7 @@
             this.labelTransaction1Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.labelTransaction1Balance.Location = new System.Drawing.Point(598, 40);
             this.labelTransaction1Balance.Name = "labelTransaction1Balance";
-            this.labelTransaction1Balance.Size = new System.Drawing.Size(252, 40);
+            this.labelTransaction1Balance.Size = new System.Drawing.Size(302, 40);
             this.labelTransaction1Balance.TabIndex = 3;
             this.labelTransaction1Balance.Text = "GÜNCEL BAKİYE: 23.000 €";
             this.labelTransaction1Balance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -224,7 +222,7 @@
             this.labelTransaction1Amount.ForeColor = System.Drawing.Color.Red;
             this.labelTransaction1Amount.Location = new System.Drawing.Point(598, 0);
             this.labelTransaction1Amount.Name = "labelTransaction1Amount";
-            this.labelTransaction1Amount.Size = new System.Drawing.Size(252, 40);
+            this.labelTransaction1Amount.Size = new System.Drawing.Size(302, 40);
             this.labelTransaction1Amount.TabIndex = 2;
             this.labelTransaction1Amount.Text = "-50.0 €";
             this.labelTransaction1Amount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -260,9 +258,9 @@
             this.panelTransaction2.Controls.Add(this.labelTransaction2Amount);
             this.panelTransaction2.Controls.Add(this.labelTransaction2Title);
             this.panelTransaction2.Controls.Add(this.labelTransaction2Date);
-            this.panelTransaction2.Location = new System.Drawing.Point(86, 460);
+            this.panelTransaction2.Location = new System.Drawing.Point(62, 437);
             this.panelTransaction2.Name = "panelTransaction2";
-            this.panelTransaction2.Size = new System.Drawing.Size(850, 80);
+            this.panelTransaction2.Size = new System.Drawing.Size(900, 80);
             this.panelTransaction2.TabIndex = 12;
             // 
             // labelTransaction2Balance
@@ -272,7 +270,7 @@
             this.labelTransaction2Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.labelTransaction2Balance.Location = new System.Drawing.Point(598, 40);
             this.labelTransaction2Balance.Name = "labelTransaction2Balance";
-            this.labelTransaction2Balance.Size = new System.Drawing.Size(252, 40);
+            this.labelTransaction2Balance.Size = new System.Drawing.Size(302, 40);
             this.labelTransaction2Balance.TabIndex = 3;
             this.labelTransaction2Balance.Text = "GÜNCEL BAKİYE: 23.050 €";
             this.labelTransaction2Balance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -284,7 +282,7 @@
             this.labelTransaction2Amount.ForeColor = System.Drawing.Color.YellowGreen;
             this.labelTransaction2Amount.Location = new System.Drawing.Point(598, 0);
             this.labelTransaction2Amount.Name = "labelTransaction2Amount";
-            this.labelTransaction2Amount.Size = new System.Drawing.Size(252, 40);
+            this.labelTransaction2Amount.Size = new System.Drawing.Size(302, 40);
             this.labelTransaction2Amount.TabIndex = 2;
             this.labelTransaction2Amount.Text = "+176.0 €";
             this.labelTransaction2Amount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -320,9 +318,9 @@
             this.panelTransaction3.Controls.Add(this.labelTransaction3Amount);
             this.panelTransaction3.Controls.Add(this.labelTransaction3Title);
             this.panelTransaction3.Controls.Add(this.labelTransaction3Date);
-            this.panelTransaction3.Location = new System.Drawing.Point(86, 555);
+            this.panelTransaction3.Location = new System.Drawing.Point(62, 532);
             this.panelTransaction3.Name = "panelTransaction3";
-            this.panelTransaction3.Size = new System.Drawing.Size(850, 80);
+            this.panelTransaction3.Size = new System.Drawing.Size(900, 80);
             this.panelTransaction3.TabIndex = 13;
             // 
             // labelTransaction3Balance
@@ -332,7 +330,7 @@
             this.labelTransaction3Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.labelTransaction3Balance.Location = new System.Drawing.Point(598, 40);
             this.labelTransaction3Balance.Name = "labelTransaction3Balance";
-            this.labelTransaction3Balance.Size = new System.Drawing.Size(252, 40);
+            this.labelTransaction3Balance.Size = new System.Drawing.Size(302, 40);
             this.labelTransaction3Balance.TabIndex = 3;
             this.labelTransaction3Balance.Text = "GÜNCEL BAKİYE: 23.226 €";
             this.labelTransaction3Balance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -344,7 +342,7 @@
             this.labelTransaction3Amount.ForeColor = System.Drawing.Color.Red;
             this.labelTransaction3Amount.Location = new System.Drawing.Point(598, 0);
             this.labelTransaction3Amount.Name = "labelTransaction3Amount";
-            this.labelTransaction3Amount.Size = new System.Drawing.Size(252, 40);
+            this.labelTransaction3Amount.Size = new System.Drawing.Size(302, 40);
             this.labelTransaction3Amount.TabIndex = 2;
             this.labelTransaction3Amount.Text = "-500.0 €";
             this.labelTransaction3Amount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -378,11 +376,11 @@
             this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
             this.buttonBack.FlatAppearance.BorderSize = 0;
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.buttonBack.Location = new System.Drawing.Point(0, 666);
+            this.buttonBack.Location = new System.Drawing.Point(0, 656);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(300, 65);
+            this.buttonBack.Size = new System.Drawing.Size(250, 60);
             this.buttonBack.TabIndex = 14;
             this.buttonBack.Text = "GERİ DÖN";
             this.buttonBack.UseVisualStyleBackColor = false;
@@ -398,9 +396,9 @@
             this.panel4.Controls.Add(this.pictureBoxQRIban);
             this.panel4.Controls.Add(this.labelIbanData);
             this.panel4.Controls.Add(this.labelIban);
-            this.panel4.Location = new System.Drawing.Point(90, 89);
+            this.panel4.Location = new System.Drawing.Point(90, 69);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(846, 222);
+            this.panel4.Size = new System.Drawing.Size(846, 209);
             this.panel4.TabIndex = 15;
             // 
             // UserControlAccountDetails
@@ -424,7 +422,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
