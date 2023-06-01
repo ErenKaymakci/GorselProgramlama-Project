@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
-    Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -91,6 +90,12 @@
     <Compile Include="UserControlAccounts.Designer.cs">
       <DependentUpon>UserControlAccounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlDeposit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDeposit.Designer.cs">
+      <DependentUpon>UserControlDeposit.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +144,12 @@
     <Compile Include="UserControlTextBoxIBAN.Designer.cs">
       <DependentUpon>UserControlTextBoxIBAN.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlWithdraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlWithdraw.Designer.cs">
+      <DependentUpon>UserControlWithdraw.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +175,9 @@
     <EmbeddedResource Include="UserControlAccounts.resx">
       <DependentUpon>UserControlAccounts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDeposit.resx">
+      <DependentUpon>UserControlDeposit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlLogin.resx">
       <DependentUpon>UserControlLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlTextBoxIBAN.resx">
       <DependentUpon>UserControlTextBoxIBAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlWithdraw.resx">
+      <DependentUpon>UserControlWithdraw.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
