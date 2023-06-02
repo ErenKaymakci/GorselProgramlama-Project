@@ -71,5 +71,10 @@ namespace GelismisATM
             hideAll();
             // para transferi usercontrol
         }
+
+        private void userControlParaTransferi1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

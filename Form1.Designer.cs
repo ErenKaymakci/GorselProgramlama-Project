@@ -1,4 +1,4 @@
-﻿namespace GelismisATM
+namespace GelismisATM
 {
     partial class Form1
     {
@@ -29,6 +29,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1095, 576);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+
+
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblMenuUsername = new System.Windows.Forms.Label();
             this.lblMenuWelcome = new System.Windows.Forms.Label();
