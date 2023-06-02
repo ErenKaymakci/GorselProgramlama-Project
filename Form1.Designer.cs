@@ -40,9 +40,12 @@
             this.btnMenuSettings = new System.Windows.Forms.Button();
             this.btnMenuExit = new System.Windows.Forms.Button();
             this.btnMenuCurrency = new System.Windows.Forms.Button();
-            this.userControlLogin1 = new GelismisATM.UserControlLogin();
+            this.userControlWithdraw1 = new GelismisATM.UserControlWithdraw();
+            this.userControlDeposit1 = new GelismisATM.UserControlDeposit();
             this.userControlAccountDetails1 = new GelismisATM.UserControlAccountDetails();
             this.userControlAdminPage1 = new GelismisATM.UserControlAdminPage();
+            this.userControlAccounts1 = new GelismisATM.UserControlAccounts();
+            this.userControlLogin1 = new GelismisATM.UserControlLogin();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,6 +119,7 @@
             this.btnMenuAccounts.TabIndex = 5;
             this.btnMenuAccounts.Text = "HESAPLARIM";
             this.btnMenuAccounts.UseVisualStyleBackColor = false;
+            this.btnMenuAccounts.Click += new System.EventHandler(this.btnMenuAccounts_Click);
             // 
             // btnMenuWitdraw
             // 
@@ -130,6 +134,7 @@
             this.btnMenuWitdraw.TabIndex = 4;
             this.btnMenuWitdraw.Text = "PARA ÇEK";
             this.btnMenuWitdraw.UseVisualStyleBackColor = false;
+            this.btnMenuWitdraw.Click += new System.EventHandler(this.btnMenuWitdraw_Click);
             // 
             // btnMenuDeposit
             // 
@@ -144,6 +149,7 @@
             this.btnMenuDeposit.TabIndex = 3;
             this.btnMenuDeposit.Text = "PARA YATIR";
             this.btnMenuDeposit.UseVisualStyleBackColor = false;
+            this.btnMenuDeposit.Click += new System.EventHandler(this.btnMenuDeposit_Click);
             // 
             // btnMenuTransfer
             // 
@@ -158,6 +164,7 @@
             this.btnMenuTransfer.TabIndex = 2;
             this.btnMenuTransfer.Text = "PARA TRANSFERİ";
             this.btnMenuTransfer.UseVisualStyleBackColor = false;
+            this.btnMenuTransfer.Click += new System.EventHandler(this.btnMenuTransfer_Click);
             // 
             // btnMenuSettings
             // 
@@ -172,6 +179,7 @@
             this.btnMenuSettings.TabIndex = 1;
             this.btnMenuSettings.Text = "AYARLAR";
             this.btnMenuSettings.UseVisualStyleBackColor = false;
+            this.btnMenuSettings.Visible = false;
             // 
             // btnMenuExit
             // 
@@ -202,29 +210,53 @@
             this.btnMenuCurrency.Text = "DÖVİZ İŞLEMLERİ";
             this.btnMenuCurrency.UseVisualStyleBackColor = false;
             // 
-            // userControlLogin1
+            // userControlWithdraw1
             // 
-            this.userControlLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.userControlLogin1.Location = new System.Drawing.Point(286, 1);
-            this.userControlLogin1.Name = "userControlLogin1";
-            this.userControlLogin1.Size = new System.Drawing.Size(1024, 768);
-            this.userControlLogin1.TabIndex = 7;
+            this.userControlWithdraw1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlWithdraw1.Location = new System.Drawing.Point(286, 0);
+            this.userControlWithdraw1.Name = "userControlWithdraw1";
+            this.userControlWithdraw1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlWithdraw1.TabIndex = 7;
+            // 
+            // userControlDeposit1
+            // 
+            this.userControlDeposit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlDeposit1.Location = new System.Drawing.Point(286, 0);
+            this.userControlDeposit1.Name = "userControlDeposit1";
+            this.userControlDeposit1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlDeposit1.TabIndex = 8;
             // 
             // userControlAccountDetails1
             // 
             this.userControlAccountDetails1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.userControlAccountDetails1.Location = new System.Drawing.Point(286, 1);
+            this.userControlAccountDetails1.Location = new System.Drawing.Point(286, 0);
             this.userControlAccountDetails1.Name = "userControlAccountDetails1";
             this.userControlAccountDetails1.Size = new System.Drawing.Size(1024, 768);
-            this.userControlAccountDetails1.TabIndex = 8;
+            this.userControlAccountDetails1.TabIndex = 9;
             // 
             // userControlAdminPage1
             // 
             this.userControlAdminPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.userControlAdminPage1.Location = new System.Drawing.Point(285, 0);
+            this.userControlAdminPage1.Location = new System.Drawing.Point(286, 0);
             this.userControlAdminPage1.Name = "userControlAdminPage1";
             this.userControlAdminPage1.Size = new System.Drawing.Size(1024, 768);
-            this.userControlAdminPage1.TabIndex = 9;
+            this.userControlAdminPage1.TabIndex = 10;
+            // 
+            // userControlAccounts1
+            // 
+            this.userControlAccounts1.BackColor = System.Drawing.Color.White;
+            this.userControlAccounts1.Location = new System.Drawing.Point(286, 0);
+            this.userControlAccounts1.Name = "userControlAccounts1";
+            this.userControlAccounts1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlAccounts1.TabIndex = 11;
+            // 
+            // userControlLogin1
+            // 
+            this.userControlLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlLogin1.Location = new System.Drawing.Point(286, 0);
+            this.userControlLogin1.Name = "userControlLogin1";
+            this.userControlLogin1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlLogin1.TabIndex = 12;
             // 
             // Form1
             // 
@@ -232,9 +264,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1314, 768);
+            this.Controls.Add(this.userControlLogin1);
+            this.Controls.Add(this.userControlAccounts1);
             this.Controls.Add(this.userControlAdminPage1);
             this.Controls.Add(this.userControlAccountDetails1);
-            this.Controls.Add(this.userControlLogin1);
+            this.Controls.Add(this.userControlDeposit1);
+            this.Controls.Add(this.userControlWithdraw1);
             this.Controls.Add(this.btnMenuCurrency);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -244,6 +279,10 @@
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        public GelismisATM.UserControlWithdraw userControlWithdraw1;
+        public GelismisATM.UserControlDeposit userControlDeposit1;
+        public GelismisATM.UserControlAccounts userControlAccounts1;
 
         public GelismisATM.UserControlAdminPage userControlAdminPage1;
 

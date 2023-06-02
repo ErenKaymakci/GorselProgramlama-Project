@@ -6,15 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="d1be5080-d302-4a26-8164-509188cc6a98" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminControlPage.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminControlPage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminControlPage.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassComboBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassPanel.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GelismisATM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GelismisATM.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlLogin.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IslemBitisEkrani.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IslemBitisEkrani.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IslemBitisEkrani.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IslemOzeti.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IslemOzeti.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IslemOzeti.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParaTransferi.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParaTransferi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParaTransferi.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlIslemOzeti.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlIslemOzeti.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlIslemOzeti.resx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserControlLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dbOperations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlMoneyTransfer.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlMoneyTransfer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlMoneyTransfer.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlTextBox.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlTextBoxIBAN.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlTextBoxIBAN.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlTextBoxIBAN.resx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +116,7 @@
       <workItem from="1685679204572" duration="4776000" />
       <workItem from="1685648209763" duration="3314000" />
       <workItem from="1685687804705" duration="2484000" />
-      <workItem from="1685724994422" duration="7236000" />
+      <workItem from="1685724994422" duration="11344000" />
     </task>
     <servers />
   </component>

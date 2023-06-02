@@ -37,14 +37,16 @@ namespace GelismisATM
                 myParent.lblMenuUsername.Text = userr;
                 if (userr == "admin")
                 {
+                    myParent.hideAll();
                     myParent.userControlAdminPage1.Show();
-                    myParent.userControlLogin1.Hide();
                 }
                 else
                 {
+                    myParent.hideAll();
                     myParent.userControlAccountDetails1.Show();
 
                 }
+                myParent.setVisibleBtns(true);
 
             }
             else
