@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace GelismisATM
 {
-    public partial class Form1 : Form
+    public partial class UserControlParaTransferi : UserControl
     {
-        public Form1()
+        public UserControlParaTransferi()
         {
             InitializeComponent();
         }
 
-        private void userControlParaTransferi1_Load(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
