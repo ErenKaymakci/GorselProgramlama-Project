@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1be5080-d302-4a26-8164-509188cc6a98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UserControlDeposit.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserControlDeposit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserControlWithdraw.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserControlWithdraw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminControlPage.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminControlPage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminControlPage.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GelismisATM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GelismisATM.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlLogin.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/dbOperations.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +25,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2NbJKNkcYccnyhmzYtcUdsHqrSu" />
   <component name="ProjectViewState">
@@ -85,6 +90,11 @@
       <workItem from="1684519737035" duration="1532000" />
       <workItem from="1684960063903" duration="4000" />
       <workItem from="1685557390109" duration="4804000" />
+      <workItem from="1685588447474" duration="283000" />
+      <workItem from="1685679204572" duration="4776000" />
+      <workItem from="1685648209763" duration="3314000" />
+      <workItem from="1685687804705" duration="2484000" />
+      <workItem from="1685724994422" duration="7236000" />
     </task>
     <servers />
   </component>

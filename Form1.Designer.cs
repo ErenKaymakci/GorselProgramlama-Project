@@ -40,10 +40,10 @@
             this.btnMenuSettings = new System.Windows.Forms.Button();
             this.btnMenuExit = new System.Windows.Forms.Button();
             this.btnMenuCurrency = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.userControlLogin1 = new GelismisATM.UserControlLogin();
             this.userControlAccountDetails1 = new GelismisATM.UserControlAccountDetails();
+            this.userControlAdminPage1 = new GelismisATM.UserControlAdminPage();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -202,22 +202,29 @@
             this.btnMenuCurrency.Text = "DÖVİZ İŞLEMLERİ";
             this.btnMenuCurrency.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // userControlLogin1
             // 
-            this.panel2.Controls.Add(this.userControlAccountDetails1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(280, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1034, 768);
-            this.panel2.TabIndex = 7;
+            this.userControlLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlLogin1.Location = new System.Drawing.Point(286, 1);
+            this.userControlLogin1.Name = "userControlLogin1";
+            this.userControlLogin1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlLogin1.TabIndex = 7;
             // 
             // userControlAccountDetails1
             // 
             this.userControlAccountDetails1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.userControlAccountDetails1.Location = new System.Drawing.Point(10, 0);
+            this.userControlAccountDetails1.Location = new System.Drawing.Point(286, 1);
             this.userControlAccountDetails1.Name = "userControlAccountDetails1";
             this.userControlAccountDetails1.Size = new System.Drawing.Size(1024, 768);
-            this.userControlAccountDetails1.TabIndex = 0;
+            this.userControlAccountDetails1.TabIndex = 8;
+            // 
+            // userControlAdminPage1
+            // 
+            this.userControlAdminPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlAdminPage1.Location = new System.Drawing.Point(285, 0);
+            this.userControlAdminPage1.Name = "userControlAdminPage1";
+            this.userControlAdminPage1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlAdminPage1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -225,7 +232,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1314, 768);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.userControlAdminPage1);
+            this.Controls.Add(this.userControlAccountDetails1);
+            this.Controls.Add(this.userControlLogin1);
             this.Controls.Add(this.btnMenuCurrency);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -233,11 +242,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ATM";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
+        public GelismisATM.UserControlAdminPage userControlAdminPage1;
+
+
+        public GelismisATM.UserControlAccountDetails userControlAccountDetails1;
+
+        public GelismisATM.UserControlLogin userControlLogin1;
 
         #endregion
 
@@ -251,8 +264,6 @@
         private System.Windows.Forms.Button btnMenuStock;
         private System.Windows.Forms.Button btnMenuCurrency;
         private System.Windows.Forms.Label lblMenuWelcome;
-        private System.Windows.Forms.Label lblMenuUsername;
-        private System.Windows.Forms.Panel panel2;
-        private UserControlAccountDetails userControlAccountDetails1;
+        public System.Windows.Forms.Label lblMenuUsername;
     }
 }

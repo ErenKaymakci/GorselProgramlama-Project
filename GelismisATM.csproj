@@ -66,12 +66,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminControlPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AdminControlPage.Designer.cs">
-      <DependentUpon>AdminControlPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="ClassButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -114,6 +108,12 @@
     </Compile>
     <Compile Include="UserControlAccounts.Designer.cs">
       <DependentUpon>UserControlAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlAdminPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAdminPage.Designer.cs">
+      <DependentUpon>UserControlAdminPage.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlDeposit.cs">
       <SubType>UserControl</SubType>
@@ -169,9 +169,6 @@
     <Compile Include="UserControlWithdraw.Designer.cs">
       <DependentUpon>UserControlWithdraw.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminControlPage.resx">
-      <DependentUpon>AdminControlPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -197,6 +194,9 @@
     </Compile>
     <EmbeddedResource Include="UserControlAccounts.resx">
       <DependentUpon>UserControlAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlAdminPage.resx">
+      <DependentUpon>UserControlAdminPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDeposit.resx">
       <DependentUpon>UserControlDeposit.cs</DependentUpon>

@@ -7,10 +7,18 @@ namespace GelismisATM
     {
         static DataTable dt;
 
-        public static DataTable accessSQLdata(string sql) // The function is doing get the data from database
+        public static DataTable accessSQLdata(string sql, SQLiteParameter[] parameters) // The function is doing get the data from database
         {
             dt = new DataTable();
-            SQLiteDataAdapter adtr = new SQLiteDataAdapter(sql, Connection.connection);
+
+            SQLiteCommand command = new SQLiteCommand(sql, Connection.connection);
+            
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                command.Parameters.Add(parameters[i]);
+            }                
+                
+            SQLiteDataAdapter adtr = new SQLiteDataAdapter(command);
             adtr.Fill(dt);
             
             return dt;
