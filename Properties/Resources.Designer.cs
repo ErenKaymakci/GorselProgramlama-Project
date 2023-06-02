@@ -78,15 +78,6 @@ namespace GelismisATM.Properties {
             }
         }
         
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap tik_ikon1 {
-            get {
-                object obj = ResourceManager.GetObject("tik-ikon1", resourceCulture);
-
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap qr_code {
             get {
                 object obj = ResourceManager.GetObject("qr-code", resourceCulture);

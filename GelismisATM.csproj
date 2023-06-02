@@ -199,7 +199,7 @@
     <None Include="tik-ikon.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-
+  <ItemGroup>
     <None Include="Resources\qr-code.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

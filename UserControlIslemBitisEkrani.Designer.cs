@@ -57,7 +57,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GelismisATM.Properties.Resources.tik_ikon1;
+            this.pictureBox1.Image = global::GelismisATM.Properties.Resources.tik_ikon;
             this.pictureBox1.Location = new System.Drawing.Point(95, 113);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(517, 146);

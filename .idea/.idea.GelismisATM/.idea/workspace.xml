@@ -6,48 +6,42 @@
   <component name="ChangeListManager">
     <list default="true" id="d1be5080-d302-4a26-8164-509188cc6a98" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassComboBox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassPanel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/27055128-b80e-49f3-b55a-65918c772628.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/4b21863a-8a34-44bb-82a7-57a1603bb811.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/acb90a80-7ede-485b-b76b-572ccaa0aa1b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/c55fad04-d07d-48bf-b6fd-b8623b2d5046.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/b757556b-3dac-40f1-8546-fc7d9f4b0c70.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/ca1fe8cc-cf36-4cc5-9f73-29b78bb124ad.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/d5dd78af-6054-48da-a2fe-673e8aa69a4b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Connection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GelismisATM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GelismisATM.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IslemBitisEkrani.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IslemBitisEkrani.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IslemBitisEkrani.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IslemOzeti.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IslemOzeti.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IslemOzeti.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParaTransferi.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParaTransferi.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParaTransferi.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlIslemOzeti.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlIslemOzeti.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlIslemOzeti.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlIslemBitisEkrani.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserControlLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlMoneyTransfer.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlMoneyTransfer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlMoneyTransfer.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlTextBox.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlTextBox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlTextBox.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlTextBoxIBAN.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlTextBoxIBAN.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlTextBoxIBAN.resx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Connection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserControlAdminPage.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/dbOperations.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="2NbJKNkcYccnyhmzYtcUdsHqrSu" />
   <component name="ProjectViewState">
@@ -85,7 +79,7 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_KIND" value="Unloaded" />
       <option name="PROJECT_TFM" value="" />
       <method v="2">
         <option name="Build" />
@@ -116,7 +110,10 @@
       <workItem from="1685679204572" duration="4776000" />
       <workItem from="1685648209763" duration="3314000" />
       <workItem from="1685687804705" duration="2484000" />
-      <workItem from="1685724994422" duration="11344000" />
+      <workItem from="1685724994422" duration="12094000" />
+      <workItem from="1685737828475" duration="242000" />
+      <workItem from="1685738147284" duration="239000" />
+      <workItem from="1685738461693" duration="1138000" />
     </task>
     <servers />
   </component>

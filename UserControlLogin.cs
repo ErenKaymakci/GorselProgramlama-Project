@@ -19,7 +19,7 @@ namespace GelismisATM
 
         void authorizeLogin()
         {
-            string sql = "SELECT * FROM Accounts WHERE AccountName=@kadi AND accountPassword=@pass";
+            string sql = "SELECT * FROM Users WHERE name=@kadi AND password=@pass";
 
             SQLiteParameter username = new SQLiteParameter("kadi", textBox1.Text);
             SQLiteParameter password = new SQLiteParameter("pass", textBox2.Text);
@@ -31,7 +31,7 @@ namespace GelismisATM
             
             if (dt.Rows.Count > 0)
             {
-                string userr = dt.Rows[0]["accountName"].ToString();
+                string userr = dt.Rows[0]["name"].ToString();
                 
                 Form1 myParent = (Form1)this.Parent;
                 myParent.lblMenuUsername.Text = userr;
