@@ -4,28 +4,7 @@
     <projectFile>GelismisATM.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1be5080-d302-4a26-8164-509188cc6a98" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GelismisATM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/27055128-b80e-49f3-b55a-65918c772628.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/4b21863a-8a34-44bb-82a7-57a1603bb811.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/acb90a80-7ede-485b-b76b-572ccaa0aa1b.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/c55fad04-d07d-48bf-b6fd-b8623b2d5046.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/FileContentIndex/read.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GelismisATM/v17/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/b757556b-3dac-40f1-8546-fc7d9f4b0c70.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/ca1fe8cc-cf36-4cc5-9f73-29b78bb124ad.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/d5dd78af-6054-48da-a2fe-673e8aa69a4b.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/FileContentIndex/read.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/GorselProgramlama-Project/v17/.wsuo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Connection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GelismisATM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GelismisATM.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlIslemBitisEkrani.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlIslemBitisEkrani.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserControlLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserControlLogin.cs" afterDir="false" />
-    </list>
+    <list default="true" id="d1be5080-d302-4a26-8164-509188cc6a98" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +92,7 @@
       <workItem from="1685724994422" duration="12094000" />
       <workItem from="1685737828475" duration="242000" />
       <workItem from="1685738147284" duration="239000" />
-      <workItem from="1685738461693" duration="1138000" />
+      <workItem from="1685738461693" duration="1480000" />
     </task>
     <servers />
   </component>
