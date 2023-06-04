@@ -19,9 +19,9 @@ namespace GelismisATM
 
         void authorizeLogin()
         {
-            string sql = "SELECT * FROM Users WHERE name=@kadi AND password=@pass";
+            string sql = "SELECT * FROM Users WHERE tc=@tc AND password=@pass";
 
-            SQLiteParameter username = new SQLiteParameter("kadi", textBox1.Text);
+            SQLiteParameter username = new SQLiteParameter("tc", textBox1.Text);
             SQLiteParameter password = new SQLiteParameter("pass", textBox2.Text);
 
             SQLiteParameter[] param = { username, password };
@@ -31,11 +31,12 @@ namespace GelismisATM
             
             if (dt.Rows.Count > 0)
             {
-                string userr = dt.Rows[0]["name"].ToString();
+                string currentUser = dt.Rows[0]["name"].ToString();
                 
                 Form1 myParent = (Form1)this.Parent;
-                myParent.lblMenuUsername.Text = userr;
-                if (userr == "admin")
+                myParent.lblMenuUsername.Text = currentUser;
+                
+                if (currentUser == "admin")
                 {
                     myParent.hideAll();
                     myParent.userControlAdminPage1.Show();
@@ -43,7 +44,13 @@ namespace GelismisATM
                 else
                 {
                     myParent.hideAll();
-                    myParent.userControlAccountDetails1.Show();
+                    User.userID = dt.Rows[0]["user_id"].ToString();;
+                    User.userName = currentUser;
+                    User.userTC = dt.Rows[0]["tc"].ToString();
+                    
+                    myParent.userControlAccounts1.getAllofAccounts();
+                    myParent.userControlAccounts1.Show();
+
 
                 }
                 myParent.setVisibleBtns(true);

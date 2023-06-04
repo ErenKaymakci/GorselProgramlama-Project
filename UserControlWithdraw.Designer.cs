@@ -32,6 +32,7 @@ namespace GelismisATM
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label label3;
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -45,7 +46,9 @@ namespace GelismisATM
             this.button10 = new System.Windows.Forms.Button();
             this.button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +57,7 @@ namespace GelismisATM
             label1.BackColor = System.Drawing.Color.Black;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label1.ForeColor = System.Drawing.Color.White;
-            label1.Location = new System.Drawing.Point(424, 283);
+            label1.Location = new System.Drawing.Point(424, 316);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(183, 29);
             label1.TabIndex = 9;
@@ -149,7 +152,7 @@ namespace GelismisATM
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(380, 326);
+            this.textBox1.Location = new System.Drawing.Point(380, 359);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(265, 54);
@@ -196,11 +199,33 @@ namespace GelismisATM
             this.label2.Text = "Para Birimi";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // label3
+            // 
+            label3.AccessibleDescription = "";
+            label3.BackColor = System.Drawing.Color.Black;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.ForeColor = System.Drawing.Color.White;
+            label3.Location = new System.Drawing.Point(433, 192);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(165, 29);
+            label3.TabIndex = 15;
+            label3.Text = "Hesap Adı";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(380, 233);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(265, 54);
+            this.textBox2.TabIndex = 14;
+            // 
             // UserControlWithdraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.Controls.Add(label3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button);
             this.Controls.Add(this.button10);
@@ -220,6 +245,8 @@ namespace GelismisATM
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.TextBox textBox2;
 
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button;
