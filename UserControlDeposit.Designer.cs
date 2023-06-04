@@ -35,6 +35,8 @@ namespace GelismisATM
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -86,20 +88,45 @@ namespace GelismisATM
             this.label1.TabIndex = 3;
             this.label1.Text = "Paranın Yatırlacağı Hesap";
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(330, 307);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(393, 40);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Tutar Girişi";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(241, 361);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(581, 73);
+            this.textBox2.TabIndex = 4;
+            // 
             // UserControlDeposit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Location = new System.Drawing.Point(15, 15);
             this.Name = "UserControlDeposit";
             this.Size = new System.Drawing.Size(1024, 768);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
 
         private System.Windows.Forms.Label label1;
 
