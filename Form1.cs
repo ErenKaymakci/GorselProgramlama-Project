@@ -35,7 +35,6 @@ namespace GelismisATM
             userControlAdminPage1.Hide();
             userControlDeposit1.Hide();
             userControlWithdraw1.Hide();
-
         }
 
         public void setVisibleBtns(bool property)
@@ -47,7 +46,9 @@ namespace GelismisATM
             btnMenuWitdraw.Visible = property;
             btnMenuStock.Visible = property;
             btnMenuSettings.Visible = property;
+            lblMenuUsername.Visible = property;
         }
+        
         private void btnMenuAccounts_Click(object sender, EventArgs e)
         {
             hideAll();

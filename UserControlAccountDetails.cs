@@ -17,5 +17,11 @@ namespace GelismisATM
             InitializeComponent();
         }
 
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Form1 myParent = (Form1)this.Parent;
+            myParent.hideAll();
+            myParent.userControlAccounts1.Show();
+        }
     }
 }

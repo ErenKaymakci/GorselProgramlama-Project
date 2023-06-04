@@ -35,6 +35,8 @@ namespace GelismisATM
                 
                 Form1 myParent = (Form1)this.Parent;
                 myParent.lblMenuUsername.Text = userr;
+
+                myParent.setVisibleBtns(true);
                 if (userr == "admin")
                 {
                     myParent.hideAll();
@@ -44,17 +46,12 @@ namespace GelismisATM
                 {
                     myParent.hideAll();
                     myParent.userControlAccountDetails1.Show();
-
                 }
-                myParent.setVisibleBtns(true);
-
             }
             else
             {
-                label4.Text = "Kullanıcı adı veya parola hatalı!";
+                label4.Text = "Giriş bilgileri hatalı!";
             }
-            
-
         }
 
         private void button1_Click(object sender, EventArgs e)
