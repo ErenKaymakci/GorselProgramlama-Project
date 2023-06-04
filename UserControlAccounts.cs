@@ -29,7 +29,6 @@ namespace GelismisATM
             SQLiteParameter[] param = { currentTC };
 
             DataTable dt = dbOperations.accessSQLdata(sql, param);
-            //User.userAccountsIDs.Add(Convert.ToInt32(dt.Rows[0]["account_id"]));
 
             if (dt.Rows.Count > 0)
             {
@@ -40,7 +39,9 @@ namespace GelismisATM
                     lbls[i *3 + 1].Text = dt.Rows[i]["iban"].ToString();
                     lbls[i *3 + 2].Text = "Bakiye : " + dt.Rows[i]["account_balance"].ToString();
 
-                    //User.userAccountsIDs.Add(Convert.ToInt32(dt.Rows[i]["account_id"]));
+                    User.userAccountsIDs += dt.Rows[i]["account_id"].ToString() + ","; 
+                    //string idx = dt.Rows[i]["account_id"].ToString();
+                    //User.userAccountsIDs.Add(idx);
                     
                     btns[i].Visible = true;
 
@@ -50,6 +51,8 @@ namespace GelismisATM
             {
                 MessageBox.Show("Aktif Hesabınız bulunmamaktadır.");
             }
+
+            //lbliban4.Text = User.userAccountsIDs;
         }
 
         public void navigateAccountDetails(int accountID)

@@ -10,7 +10,9 @@ namespace GelismisATM
         public static string userName { get; set; }
         public static string userTC { get; set; }
         
-        public static List<int> userAccountsIDs { get; set; }
+        //public static List<string> userAccountsIDs { get; set; }
+        public static string userAccountsIDs { get; set; }
         public static int currentAccountID { get; set; }
+        
     }
 }

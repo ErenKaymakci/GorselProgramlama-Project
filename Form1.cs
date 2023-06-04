@@ -58,6 +58,7 @@ namespace GelismisATM
         private void btnMenuWitdraw_Click(object sender, EventArgs e)
         {
             hideAll();
+            userControlWithdraw1.configureComboBox();
             userControlWithdraw1.Show();
         }
 

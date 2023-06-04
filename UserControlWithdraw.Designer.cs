@@ -41,13 +41,16 @@ namespace GelismisATM
             this.button6 = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+
             label1 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -76,6 +79,7 @@ namespace GelismisATM
             label3.Location = new System.Drawing.Point(442, 317);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(133, 29);
+
             label3.TabIndex = 15;
             label3.Text = "Hesap Adı";
             // 
@@ -199,6 +203,7 @@ namespace GelismisATM
             this.textBox1.Size = new System.Drawing.Size(265, 54);
             this.textBox1.TabIndex = 8;
             // 
+
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -253,6 +258,23 @@ namespace GelismisATM
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(265, 54);
             this.textBox2.TabIndex = 14;
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(380, 241);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(265, 32);
+            this.comboBox1.TabIndex = 16;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(380, 360);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(265, 34);
+            this.textBox1.TabIndex = 8;
+
             // 
             // label4
             // 
@@ -273,8 +295,9 @@ namespace GelismisATM
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.label4);
+
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(label3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button);
             this.Controls.Add(this.button10);
@@ -295,17 +318,20 @@ namespace GelismisATM
             this.PerformLayout();
         }
 
+
         private System.Windows.Forms.Label label4;
 
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+
+        private System.Windows.Forms.ComboBox comboBox1;
+
 
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button;
         private System.Windows.Forms.Label label2;
 
         private System.Windows.Forms.Button button9;
-
-        private System.Windows.Forms.TextBox textBox1;
 
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button button8;

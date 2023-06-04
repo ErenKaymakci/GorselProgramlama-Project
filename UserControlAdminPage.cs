@@ -13,7 +13,8 @@ namespace GelismisATM
         
         void showAllDB()
         {
-            string sqlCommand = "SELECT * FROM Accounts";
+            string sqlCommand = "SELECT * FROM " + comboBox1.GetItemText(comboBox1.SelectedItem);
+            //SQLiteParameter param1 = new SQLiteParameter("comboBoxValue);
             SQLiteParameter[] param = { };
             dataGridView1.DataSource = dbOperations.accessSQLdata(sqlCommand, param);
         }
