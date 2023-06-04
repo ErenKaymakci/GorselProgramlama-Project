@@ -19,11 +19,13 @@ namespace GelismisATM
             hideAll();
             setVisibleBtns(false);
             userControlLogin1.Show();
-            
         }
 
         private void btnMenuExit_Click(object sender, EventArgs e)
         {
+            // hideAll();
+            // setVisibleBtns(false);
+            // userControlLogin1.Show();
             Environment.Exit(0);
         }
 
@@ -35,6 +37,9 @@ namespace GelismisATM
             userControlAdminPage1.Hide();
             userControlDeposit1.Hide();
             userControlWithdraw1.Hide();
+            //userControlslemOzeti1.Hide();
+            //userControlParaTransferi1.Hide();
+            //userControlIslemBitisEkrani1.Hide();
         }
 
         public void setVisibleBtns(bool property)
@@ -70,12 +75,25 @@ namespace GelismisATM
         private void btnMenuTransfer_Click(object sender, EventArgs e)
         {
             hideAll();
-            // para transferi usercontrol
+            //userControlParaTransferi1.Show();
         }
 
-        private void userControlParaTransferi1_Load(object sender, EventArgs e)
+        private void btnMenuCurrency_Click(object sender, EventArgs e)
         {
+            hideAll();
+            // Döviz İşlemleri Sayfası
+        }
 
+        private void btnMenuStock_Click(object sender, EventArgs e)
+        {
+            hideAll();
+            // Hisse İşlemleri Sayfası
+        }
+
+        private void btnMenuSettings_Click(object sender, EventArgs e)
+        {
+            hideAll();
+            // Kullanıcı Ayarları Sayfası
         }
     }
 }

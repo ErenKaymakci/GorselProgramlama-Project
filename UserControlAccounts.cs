@@ -57,8 +57,8 @@ namespace GelismisATM
             Form1 myParent = (Form1)this.Parent;
             myParent.hideAll();
             User.currentAccountID = accountID;
+            myParent.userControlAccountDetails1.getAccountData();
             myParent.userControlAccountDetails1.Show();
-
         }
 
         private void BtnDetail1_Click(object sender, EventArgs e)
