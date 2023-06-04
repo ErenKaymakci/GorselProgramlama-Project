@@ -12,7 +12,7 @@ namespace GelismisATM
         
         //public static List<string> userAccountsIDs { get; set; }
         public static string userAccountsIDs { get; set; }
-        public static int currentAccountID { get; set; }
+        public static string currentAccountID { get; set; }
         
     }
 }

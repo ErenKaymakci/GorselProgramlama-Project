@@ -7,7 +7,7 @@ namespace GelismisATM
 {
     public partial class UserControlAccounts : UserControl
     {
-        
+        public string[] accIDs = new string[] {"","","",""};
         public UserControlAccounts()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace GelismisATM
 
             DataTable dt = dbOperations.accessSQLdata(sql, param);
 
-            string[] accIDS;
+            
 
             if (dt.Rows.Count > 0)
             {
@@ -44,8 +44,10 @@ namespace GelismisATM
                     User.userAccountsIDs += dt.Rows[i]["account_id"].ToString() + ","; 
                     //string idx = dt.Rows[i]["account_id"].ToString();
                     //User.userAccountsIDs.Add(idx);
-                    
+
                     btns[i].Visible = true;
+
+                    accIDs[i] = dt.Rows[i]["account_id"].ToString();
 
                 }
             }
@@ -57,7 +59,7 @@ namespace GelismisATM
             //lbliban4.Text = User.userAccountsIDs;
         }
 
-        public void navigateAccountDetails(int accountID)
+        public void navigateAccountDetails(string accountID)
         {
             Form1 myParent = (Form1)this.Parent;
             myParent.hideAll();
@@ -68,22 +70,22 @@ namespace GelismisATM
 
         private void BtnDetail1_Click(object sender, EventArgs e)
         {
-            navigateAccountDetails(1);
+            navigateAccountDetails(accIDs[0]);
         }
 
         private void BtnDetail2_Click(object sender, EventArgs e)
         {
-            navigateAccountDetails(1);
+            navigateAccountDetails(accIDs[1]);
         }
 
         private void BtnDetail3_Click(object sender, EventArgs e)
         {
-            navigateAccountDetails(1);
+            navigateAccountDetails(accIDs[2]);
         }
 
         private void BtnDetail4_Click(object sender, EventArgs e)
         {
-            navigateAccountDetails(1);
+            navigateAccountDetails(accIDs[3]);
         }
     }
 }
