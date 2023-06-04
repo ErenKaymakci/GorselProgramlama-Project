@@ -101,7 +101,7 @@ namespace GelismisATM
             // 
             // BtnDetail1
             // 
-            this.BtnDetail1.FlatAppearance.BorderSize = 2;
+            this.BtnDetail1.FlatAppearance.BorderSize = 0;
             this.BtnDetail1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDetail1.ForeColor = System.Drawing.Color.White;
             this.BtnDetail1.Image = ((System.Drawing.Image)(resources.GetObject("BtnDetail1.Image")));
@@ -115,24 +115,26 @@ namespace GelismisATM
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(399, 24);
+            this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 48);
+            this.label3.Size = new System.Drawing.Size(1024, 53);
             this.label3.TabIndex = 1;
             this.label3.Text = "HESAPLAR";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 675);
+            this.button1.Location = new System.Drawing.Point(0, 656);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 65);
+            this.button1.Size = new System.Drawing.Size(250, 60);
             this.button1.TabIndex = 2;
             this.button1.Text = "GERİ DÖN";
             this.button1.UseVisualStyleBackColor = false;
@@ -178,7 +180,7 @@ namespace GelismisATM
             // 
             // BtnDetail2
             // 
-            this.BtnDetail2.FlatAppearance.BorderSize = 2;
+            this.BtnDetail2.FlatAppearance.BorderSize = 0;
             this.BtnDetail2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDetail2.ForeColor = System.Drawing.Color.White;
             this.BtnDetail2.Image = ((System.Drawing.Image)(resources.GetObject("BtnDetail2.Image")));
@@ -231,7 +233,7 @@ namespace GelismisATM
             // 
             // BtnDetail3
             // 
-            this.BtnDetail3.FlatAppearance.BorderSize = 2;
+            this.BtnDetail3.FlatAppearance.BorderSize = 0;
             this.BtnDetail3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDetail3.ForeColor = System.Drawing.Color.White;
             this.BtnDetail3.Image = ((System.Drawing.Image)(resources.GetObject("BtnDetail3.Image")));
@@ -285,7 +287,7 @@ namespace GelismisATM
             // 
             // BtnDetail4
             // 
-            this.BtnDetail4.FlatAppearance.BorderSize = 2;
+            this.BtnDetail4.FlatAppearance.BorderSize = 0;
             this.BtnDetail4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDetail4.ForeColor = System.Drawing.Color.White;
             this.BtnDetail4.Image = ((System.Drawing.Image)(resources.GetObject("BtnDetail4.Image")));
