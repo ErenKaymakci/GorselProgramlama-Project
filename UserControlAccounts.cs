@@ -30,6 +30,8 @@ namespace GelismisATM
 
             DataTable dt = dbOperations.accessSQLdata(sql, param);
 
+            string[] accIDS;
+
             if (dt.Rows.Count > 0)
             {
                 
