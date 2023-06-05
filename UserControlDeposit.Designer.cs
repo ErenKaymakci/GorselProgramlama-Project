@@ -33,11 +33,11 @@ namespace GelismisATM
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -68,14 +68,6 @@ namespace GelismisATM
             this.button2.Text = "ONAYLA";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(234, 257);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(547, 32);
-            this.textBox1.TabIndex = 2;
             // 
             // label1
             // 
@@ -123,16 +115,25 @@ namespace GelismisATM
             this.label6.Text = "PARA YATIR";
             this.label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(280, 262);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(466, 26);
+            this.comboBox1.TabIndex = 38;
+            // 
             // UserControlDeposit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Location = new System.Drawing.Point(15, 15);
@@ -142,6 +143,8 @@ namespace GelismisATM
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.ComboBox comboBox1;
+
         private System.Windows.Forms.Label label6;
 
         private System.Windows.Forms.Label label2;
@@ -150,7 +153,6 @@ namespace GelismisATM
         private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
 
         private System.Windows.Forms.Button button1;
 

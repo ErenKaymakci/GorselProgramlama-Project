@@ -81,6 +81,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserControlAdminAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlAdminAdd.Designer.cs">
+      <DependentUpon>UserControlAdminAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlIslemBitisEkrani.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,6 +156,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControlAdminAdd.resx">
+      <DependentUpon>UserControlAdminAdd.cs</DependentUpon>
+    </EmbeddedResource>
 
     <EmbeddedResource Include="UserControlIslemBitisEkrani.resx">
       <DependentUpon>UserControlIslemBitisEkrani.cs</DependentUpon>

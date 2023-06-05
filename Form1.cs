@@ -40,6 +40,7 @@ namespace GelismisATM
             //userControlslemOzeti1.Hide();
             //userControlParaTransferi1.Hide();
             //userControlIslemBitisEkrani1.Hide();
+            userControlAdminAdd1.Hide();
         }
 
         public void setVisibleBtns(bool property)
@@ -70,6 +71,7 @@ namespace GelismisATM
         private void btnMenuDeposit_Click(object sender, EventArgs e)
         {
             hideAll();
+            userControlDeposit1.configureComboBox();
             userControlDeposit1.Show();
         }
 

@@ -36,7 +36,11 @@ namespace GelismisATM
                 command.Parameters.Add(parameters[i]);
             }
             
-            Connection.connection.Open();
+            if (Connection.connection != null && Connection.connection.State == ConnectionState.Closed)
+            {
+                Connection.connection.Open();
+            }
+            
             correction = command.ExecuteNonQuery();
             
             if (correction == 0)
@@ -47,7 +51,6 @@ namespace GelismisATM
             {
                 return true;
             }
-            
         }
     }
 }

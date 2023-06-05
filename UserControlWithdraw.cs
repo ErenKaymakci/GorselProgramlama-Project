@@ -17,7 +17,6 @@ namespace GelismisATM
 
         public void configureComboBox()
         {
-            string[] ids = User.userAccountsIDs.Split(Convert.ToChar(","));
             string sql = "SELECT * from Accounts WHERE tc=@tc";
 
             SQLiteParameter param1 = new SQLiteParameter("tc", User.userTC);
@@ -50,6 +49,21 @@ namespace GelismisATM
 
             SQLiteParameter[] parameters = { idParam, amountParam };
             dbOperations.executeSQL(sql, parameters);
+            
+            string query = "INSERT INTO Transactionn(transaction_date, transaction_type, targetIBAN, amount, nextBalance, account_id) VALUES(@date, @type,@iban ,@amount, @balance, @id)";
+
+            string date = DateTime.Now.ToString();
+            SQLiteParameter paramName = new SQLiteParameter("date", date);
+            SQLiteParameter paramType = new SQLiteParameter("type", "para cekme");
+            SQLiteParameter paramIban = new SQLiteParameter("iban", filteredRows[0]["iban"].ToString());
+            SQLiteParameter paramAmount = new SQLiteParameter("amount", totalAmount);
+            SQLiteParameter paramBalance = new SQLiteParameter("balance", totalAmount - val);
+            SQLiteParameter paramId = new SQLiteParameter("id", choosenID);
+
+
+            SQLiteParameter[] prms = { paramName, paramType, paramIban, paramAmount, paramBalance, paramId };
+            
+            dbOperations.executeSQL(query, prms);
 
 
         }

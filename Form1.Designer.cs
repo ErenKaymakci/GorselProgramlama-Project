@@ -29,19 +29,6 @@ namespace GelismisATM
         /// </summary>
         private void InitializeComponent()
         {
-
-            this.SuspendLayout();
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 576);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-
-
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblMenuUsername = new System.Windows.Forms.Label();
             this.lblMenuWelcome = new System.Windows.Forms.Label();
@@ -58,6 +45,7 @@ namespace GelismisATM
             this.userControlAccountDetails1 = new GelismisATM.UserControlAccountDetails();
             this.userControlAdminPage1 = new GelismisATM.UserControlAdminPage();
             this.userControlAccounts1 = new GelismisATM.UserControlAccounts();
+            this.userControlAdminAdd1 = new GelismisATM.UserControlAdminAdd();
             this.userControlLogin1 = new GelismisATM.UserControlLogin();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -263,13 +251,21 @@ namespace GelismisATM
             this.userControlAccounts1.Size = new System.Drawing.Size(1024, 768);
             this.userControlAccounts1.TabIndex = 11;
             // 
+            // userControlAdminAdd1
+            // 
+            this.userControlAdminAdd1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlAdminAdd1.Location = new System.Drawing.Point(286, 0);
+            this.userControlAdminAdd1.Name = "userControlAdminAdd1";
+            this.userControlAdminAdd1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlAdminAdd1.TabIndex = 12;
+            // 
             // userControlLogin1
             // 
             this.userControlLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.userControlLogin1.Location = new System.Drawing.Point(286, 0);
             this.userControlLogin1.Name = "userControlLogin1";
             this.userControlLogin1.Size = new System.Drawing.Size(1024, 768);
-            this.userControlLogin1.TabIndex = 12;
+            this.userControlLogin1.TabIndex = 13;
             // 
             // Form1
             // 
@@ -278,6 +274,7 @@ namespace GelismisATM
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1314, 768);
             this.Controls.Add(this.userControlLogin1);
+            this.Controls.Add(this.userControlAdminAdd1);
             this.Controls.Add(this.userControlAccounts1);
             this.Controls.Add(this.userControlAdminPage1);
             this.Controls.Add(this.userControlAccountDetails1);
@@ -286,12 +283,15 @@ namespace GelismisATM
             this.Controls.Add(this.btnMenuCurrency);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ATM";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        public GelismisATM.UserControlAdminAdd userControlAdminAdd1;
 
         public GelismisATM.UserControlWithdraw userControlWithdraw1;
         public GelismisATM.UserControlDeposit userControlDeposit1;
@@ -302,7 +302,7 @@ namespace GelismisATM
 
         public GelismisATM.UserControlAccountDetails userControlAccountDetails1;
 
-        public GelismisATM.UserControlLogin userControlLogin1;
+        private GelismisATM.UserControlLogin userControlLogin1;
 
         #endregion
 
