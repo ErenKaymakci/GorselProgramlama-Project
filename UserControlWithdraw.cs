@@ -54,7 +54,7 @@ namespace GelismisATM
 
             string date = DateTime.Now.ToString();
             SQLiteParameter paramName = new SQLiteParameter("date", date);
-            SQLiteParameter paramType = new SQLiteParameter("type", "para cekme");
+            SQLiteParameter paramType = new SQLiteParameter("type", "paraCekme");
             SQLiteParameter paramIban = new SQLiteParameter("iban", filteredRows[0]["iban"].ToString());
             SQLiteParameter paramAmount = new SQLiteParameter("amount", totalAmount);
             SQLiteParameter paramBalance = new SQLiteParameter("balance", totalAmount - val);

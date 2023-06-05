@@ -48,19 +48,15 @@ namespace GelismisATM
 
             string query = "INSERT INTO Transactionn(transaction_date, transaction_type, targetIBAN, amount, nextBalance, account_id) VALUES(@date, @type,@iban ,@amount, @balance, @id)";
 
+            string date = DateTime.Now.ToString();
    
-            SQLiteParameter paramName = new SQLiteParameter("date", "17.03.2022");
-            SQLiteParameter paramType = new SQLiteParameter("type", "para yatırma");
+            SQLiteParameter paramName = new SQLiteParameter("date", date);
+            SQLiteParameter paramType = new SQLiteParameter("type", "paraYatirma");
             SQLiteParameter paramIban = new SQLiteParameter("iban", filteredRows[0]["iban"].ToString());
             SQLiteParameter paramAmount = new SQLiteParameter("amount", totalAmount);
             SQLiteParameter paramBalance = new SQLiteParameter("balance", totalAmount + val);
             SQLiteParameter paramId = new SQLiteParameter("id", choosenID);
 
-            label6.Text = filteredRows[0]["iban"].ToString();
-            label1.Text = choosenID;
-            label2.Text = (totalAmount + val).ToString();
-
-            
             SQLiteParameter[] prms = { paramName, paramType, paramIban, paramAmount, paramBalance, paramId };
             
             dbOperations.executeSQL(query, prms);
