@@ -40,19 +40,18 @@ namespace GelismisATM
                 
                 if (currentUser == "admin")
                 {
-                    myParent.hideAll();
                     myParent.userControlAdminPage1.Show();
                 }
                 else
                 {
-                    myParent.hideAll();
-                    User.userID = dt.Rows[0]["user_id"].ToString();;
-                    User.userName = currentUser;
-                    User.userTC = dt.Rows[0]["tc"].ToString();
-                    
-                    myParent.userControlAccounts1.getAllofAccounts();
                     myParent.userControlAccounts1.Show();
                 }
+                myParent.hideAll();
+                User.userID = dt.Rows[0]["user_id"].ToString();;
+                User.userName = currentUser;
+                User.userTC = dt.Rows[0]["tc"].ToString();
+                    
+                myParent.userControlAccounts1.getAllofAccounts();
             }
             else
             {
