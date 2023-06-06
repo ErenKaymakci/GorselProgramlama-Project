@@ -70,6 +70,8 @@ namespace GelismisATM
         private void button8_Click(object sender, EventArgs e)
         {
             withdraw();
+          
+           
         }
 
         private void label1_Click(object sender, EventArgs e)

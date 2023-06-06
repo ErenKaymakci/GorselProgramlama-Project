@@ -256,9 +256,9 @@ namespace GelismisATM
         private System.Windows.Forms.Label label4;
 
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox1;
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox comboBox1;
 
 
         private System.Windows.Forms.Button backButton;

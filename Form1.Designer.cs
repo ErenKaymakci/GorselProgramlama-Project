@@ -46,6 +46,9 @@ namespace GelismisATM
             this.userControlAdminPage1 = new GelismisATM.UserControlAdminPage();
             this.userControlAccounts1 = new GelismisATM.UserControlAccounts();
             this.userControlAdminAdd1 = new GelismisATM.UserControlAdminAdd();
+            this.userControlIslemBitisEkrani1 = new GelismisATM.UserControlIslemBitisEkrani();
+            this.userControlParaTransferi1 = new GelismisATM.UserControlParaTransferi();
+            this.userControlslemOzeti1 = new GelismisATM.UserControlslemOzeti();
             this.userControlLogin1 = new GelismisATM.UserControlLogin();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -259,13 +262,40 @@ namespace GelismisATM
             this.userControlAdminAdd1.Size = new System.Drawing.Size(1024, 768);
             this.userControlAdminAdd1.TabIndex = 12;
             // 
+            // userControlIslemBitisEkrani1
+            // 
+            this.userControlIslemBitisEkrani1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlIslemBitisEkrani1.Location = new System.Drawing.Point(286, 0);
+            this.userControlIslemBitisEkrani1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlIslemBitisEkrani1.Name = "userControlIslemBitisEkrani1";
+            this.userControlIslemBitisEkrani1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlIslemBitisEkrani1.TabIndex = 13;
+            // 
+            // userControlParaTransferi1
+            // 
+            this.userControlParaTransferi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlParaTransferi1.Location = new System.Drawing.Point(286, 0);
+            this.userControlParaTransferi1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlParaTransferi1.Name = "userControlParaTransferi1";
+            this.userControlParaTransferi1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlParaTransferi1.TabIndex = 14;
+            // 
+            // userControlslemOzeti1
+            // 
+            this.userControlslemOzeti1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlslemOzeti1.Location = new System.Drawing.Point(286, 0);
+            this.userControlslemOzeti1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlslemOzeti1.Name = "userControlslemOzeti1";
+            this.userControlslemOzeti1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlslemOzeti1.TabIndex = 15;
+            // 
             // userControlLogin1
             // 
             this.userControlLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.userControlLogin1.Location = new System.Drawing.Point(286, 0);
             this.userControlLogin1.Name = "userControlLogin1";
             this.userControlLogin1.Size = new System.Drawing.Size(1024, 768);
-            this.userControlLogin1.TabIndex = 13;
+            this.userControlLogin1.TabIndex = 16;
             // 
             // Form1
             // 
@@ -274,6 +304,9 @@ namespace GelismisATM
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1314, 768);
             this.Controls.Add(this.userControlLogin1);
+            this.Controls.Add(this.userControlslemOzeti1);
+            this.Controls.Add(this.userControlParaTransferi1);
+            this.Controls.Add(this.userControlIslemBitisEkrani1);
             this.Controls.Add(this.userControlAdminAdd1);
             this.Controls.Add(this.userControlAccounts1);
             this.Controls.Add(this.userControlAdminPage1);
@@ -289,6 +322,7 @@ namespace GelismisATM
             this.Text = "ATM";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         public GelismisATM.UserControlAdminAdd userControlAdminAdd1;
@@ -301,8 +335,6 @@ namespace GelismisATM
 
 
         public GelismisATM.UserControlAccountDetails userControlAccountDetails1;
-
-        private GelismisATM.UserControlLogin userControlLogin1;
 
         #endregion
 
@@ -317,5 +349,9 @@ namespace GelismisATM
         private System.Windows.Forms.Button btnMenuCurrency;
         private System.Windows.Forms.Label lblMenuWelcome;
         public System.Windows.Forms.Label lblMenuUsername;
+        public UserControlIslemBitisEkrani userControlIslemBitisEkrani1;
+        public UserControlParaTransferi userControlParaTransferi1;
+        public UserControlslemOzeti userControlslemOzeti1;
+        public UserControlLogin userControlLogin1;
     }
 }

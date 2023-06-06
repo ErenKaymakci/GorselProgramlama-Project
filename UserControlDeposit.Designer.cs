@@ -143,12 +143,12 @@ namespace GelismisATM
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox comboBox1;
 
         private System.Windows.Forms.Label label6;
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox2;
 
         private System.Windows.Forms.Label label1;
 
