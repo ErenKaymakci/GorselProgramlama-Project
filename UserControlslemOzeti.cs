@@ -86,30 +86,25 @@ namespace GelismisATM
 
             else
             {
-                SQLiteConnection connection = new SQLiteConnection("Data source=C:\\Users\\iremm\\Downloads\\atmDatas.db;");
-
-                //eğer yeterli bakiye varsa
-                SQLiteCommand komut2 = new SQLiteCommand("update Accounts set account_balance=account_balance-@p1 where tc=@p2 and account_type=@p4", connection);
-                SQLiteCommand komut3 = new SQLiteCommand("update Accounts set account_balance=account_balance+@p3 where iban=@p2", connection);
-
-
-               // string tc3 = Convert.ToString(myParent.userControlLogin1.textBox1.Text);
+                //bakiye güncelleme
+                string komut2 = "update Accounts set account_balance=account_balance-@p1 where tc=@p2 and account_type=@p4";
+                string komut3 = "update Accounts set account_balance=account_balance+@p3 where iban=@p5";
+                // string tc3 = Convert.ToString(myParent.userControlLogin1.textBox1.Text);
                 string account_type3 = myParent.userControlParaTransferi1.comboBox1.Text;
-
-                komut2.Parameters.AddWithValue("@p1", miktar);
-                komut2.Parameters.AddWithValue("@p2", tc);
-                komut2.Parameters.AddWithValue("@p4", account_type3);
-
+                SQLiteParameter p1 = new SQLiteParameter("p1", miktar);
+                SQLiteParameter p2 = new SQLiteParameter("p2", tc);//giriş yapan kullanıcı tc
+                SQLiteParameter p4 = new SQLiteParameter("p4", account_type3);//comboBox seçilen hesap türü
 
                 string iban = (myParent.userControlParaTransferi1.maskedTextBox1.Text).ToString();//transfer yapılacak iban
-                komut3.Parameters.AddWithValue("@p3", miktar);
-                komut3.Parameters.AddWithValue("@p2", iban);
+                SQLiteParameter p3 = new SQLiteParameter("p3", miktar);//transfer yapılacak miktar
+                SQLiteParameter p5 = new SQLiteParameter("p5", iban);//transfer yapılacak iban
+                SQLiteParameter[] paramk2 = { p1,p2,p4 };
+                SQLiteParameter[] paramk3 = { p3,p5 };
 
+                dbOperations.executeSQL(komut2, paramk2);
+                dbOperations.executeSQL(komut3, paramk3);
+        
 
-                connection.Open();
-                komut2.ExecuteNonQuery();
-                komut3.ExecuteNonQuery();
-                connection.Close();
 
 
 
