@@ -37,9 +37,9 @@ namespace GelismisATM
             userControlAdminPage1.Hide();
             userControlDeposit1.Hide();
             userControlWithdraw1.Hide();
-            //userControlslemOzeti1.Hide();
-            //userControlParaTransferi1.Hide();
-            //userControlIslemBitisEkrani1.Hide();
+            userControlslemOzeti1.Hide();
+            userControlParaTransferi1.Hide();
+            userControlIslemBitisEkrani1.Hide();
             userControlAdminAdd1.Hide();
         }
 
@@ -47,17 +47,18 @@ namespace GelismisATM
         {
             btnMenuAccounts.Visible = property;
             btnMenuDeposit.Visible = property;
-            btnMenuCurrency.Visible = property;
+            //btnMenuCurrency.Visible = property;
             btnMenuTransfer.Visible = property;
             btnMenuWitdraw.Visible = property;
-            btnMenuStock.Visible = property;
-            btnMenuSettings.Visible = property;
+            //btnMenuStock.Visible = property;
+            //btnMenuSettings.Visible = property;
             lblMenuUsername.Visible = property;
         }
         
         private void btnMenuAccounts_Click(object sender, EventArgs e)
         {
             hideAll();
+            userControlAccounts1.getAllofAccounts();
             userControlAccounts1.Show();
         }
 
@@ -66,6 +67,8 @@ namespace GelismisATM
             hideAll();
             userControlWithdraw1.configureComboBox();
             userControlWithdraw1.Show();
+            userControlWithdraw1.textBox1.Text = "";
+            userControlWithdraw1.comboBox1.Text = "";
         }
 
         private void btnMenuDeposit_Click(object sender, EventArgs e)
@@ -73,12 +76,18 @@ namespace GelismisATM
             hideAll();
             userControlDeposit1.configureComboBox();
             userControlDeposit1.Show();
+            userControlDeposit1.textBox2.Text = "";
+            userControlDeposit1.comboBox1.Text = "";
         }
 
         private void btnMenuTransfer_Click(object sender, EventArgs e)
         {
             hideAll();
-            //userControlParaTransferi1.Show();
+            userControlParaTransferi1.Show();
+            userControlParaTransferi1.configureComboBox();
+            userControlParaTransferi1.maskedTextBox1.Text = "";
+            userControlParaTransferi1.comboBox1.Text = "";
+            userControlParaTransferi1.comboBox2.Text = "";
         }
 
         private void btnMenuCurrency_Click(object sender, EventArgs e)

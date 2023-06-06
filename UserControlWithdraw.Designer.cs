@@ -33,6 +33,7 @@ namespace GelismisATM
         {
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label labelError;
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@ namespace GelismisATM
             this.textBox1 = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
+            labelError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,6 +78,20 @@ namespace GelismisATM
             label3.TabIndex = 15;
             label3.Text = "Hesap Adı";
             // 
+            // labelError
+            // 
+            labelError.AccessibleDescription = "";
+            labelError.AutoSize = true;
+            labelError.BackColor = System.Drawing.Color.Transparent;
+            labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            labelError.ForeColor = System.Drawing.Color.Red;
+            labelError.Location = new System.Drawing.Point(441, 540);
+            labelError.Name = "labelError";
+            labelError.Size = new System.Drawing.Size(160, 26);
+            labelError.TabIndex = 17;
+            labelError.Text = "İşlem Başarısız";
+            labelError.Visible = false;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
@@ -88,6 +104,7 @@ namespace GelismisATM
             this.button1.TabIndex = 0;
             this.button1.Text = "50";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -115,6 +132,7 @@ namespace GelismisATM
             this.button3.TabIndex = 2;
             this.button3.Text = "100";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -128,6 +146,7 @@ namespace GelismisATM
             this.button4.TabIndex = 5;
             this.button4.Text = "1000";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -141,6 +160,7 @@ namespace GelismisATM
             this.button5.TabIndex = 4;
             this.button5.Text = "500";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -170,6 +190,7 @@ namespace GelismisATM
             this.backButton.TabIndex = 6;
             this.backButton.Text = "GERİ DÖN";
             this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // button8
             // 
@@ -233,6 +254,7 @@ namespace GelismisATM
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.Controls.Add(labelError);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(label3);
@@ -250,15 +272,16 @@ namespace GelismisATM
             this.Size = new System.Drawing.Size(1024, 768);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
 
         private System.Windows.Forms.Label label4;
 
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox1;
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox comboBox1;
 
 
         private System.Windows.Forms.Button backButton;

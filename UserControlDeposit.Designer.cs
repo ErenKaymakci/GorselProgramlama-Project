@@ -53,6 +53,7 @@ namespace GelismisATM
             this.button1.TabIndex = 0;
             this.button1.Text = "GERİ DÖN";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -143,12 +144,12 @@ namespace GelismisATM
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox comboBox1;
 
         private System.Windows.Forms.Label label6;
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox2;
 
         private System.Windows.Forms.Label label1;
 

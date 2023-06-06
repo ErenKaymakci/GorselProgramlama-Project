@@ -53,7 +53,10 @@ namespace GelismisATM
             }
             else
             {
+                Form1 myParent = (Form1)this.Parent;
+                myParent.hideAll();
                 MessageBox.Show("Aktif Hesabınız bulunmamaktadır.");
+                
             }
 
             //lbliban4.Text = User.userAccountsIDs;

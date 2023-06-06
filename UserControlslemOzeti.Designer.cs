@@ -97,11 +97,11 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(550, 178);
+            this.textBox3.Location = new System.Drawing.Point(398, 178);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(228, 25);
+            this.textBox3.Size = new System.Drawing.Size(380, 25);
             this.textBox3.TabIndex = 6;
             // 
             // textBox2
@@ -141,7 +141,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(635, 150);
+            this.label3.Location = new System.Drawing.Point(557, 150);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 26);
@@ -280,6 +280,7 @@
             this.button2.TabIndex = 27;
             this.button2.Text = "GERİ DÖN";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -396,12 +397,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

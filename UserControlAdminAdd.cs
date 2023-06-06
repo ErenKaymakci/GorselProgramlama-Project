@@ -18,12 +18,12 @@ namespace GelismisATM
 
         private void btnUsersAdd_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO Accounts(tc, name, surname, password) VALUES(@tc, @name, @surname,@pass)";
+            string sql = "INSERT INTO Users(tc, name, surname, password) VALUES(@tc, @name, @surname,@pass)";
 
             SQLiteParameter paramTC = new SQLiteParameter("tc", textBoxUsersTC.Text);
             SQLiteParameter paramName = new SQLiteParameter("name", textBoxUsersName.Text);
-            SQLiteParameter paramSurname = new SQLiteParameter("surname", textBoxUsersSurname);
-            SQLiteParameter paramPass = new SQLiteParameter("pass", textBoxUsersPass);
+            SQLiteParameter paramSurname = new SQLiteParameter("surname", textBoxUsersSurname.Text);
+            SQLiteParameter paramPass = new SQLiteParameter("pass", textBoxUsersPass.Text);
 
 
             SQLiteParameter[] prms = { paramTC, paramName, paramSurname, paramPass };

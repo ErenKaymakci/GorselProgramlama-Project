@@ -48,20 +48,29 @@ namespace GelismisATM
 
             string query = "INSERT INTO Transactionn(transaction_date, transaction_type, targetIBAN, amount, nextBalance, account_id) VALUES(@date, @type,@iban ,@amount, @balance, @id)";
 
-            string date = DateTime.Now.ToString();
+            DateTime date = DateTime.Now;
    
             SQLiteParameter paramName = new SQLiteParameter("date", date);
-            SQLiteParameter paramType = new SQLiteParameter("type", "paraYatirma");
+            SQLiteParameter paramType = new SQLiteParameter("type", "Para Yatırma");
             SQLiteParameter paramIban = new SQLiteParameter("iban", filteredRows[0]["iban"].ToString());
-            SQLiteParameter paramAmount = new SQLiteParameter("amount", totalAmount);
+            SQLiteParameter paramAmount = new SQLiteParameter("amount", val);
             SQLiteParameter paramBalance = new SQLiteParameter("balance", totalAmount + val);
             SQLiteParameter paramId = new SQLiteParameter("id", choosenID);
 
             SQLiteParameter[] prms = { paramName, paramType, paramIban, paramAmount, paramBalance, paramId };
             
-            dbOperations.executeSQL(query, prms);
-            
-            
+
+            if (dbOperations.executeSQL(query, prms))
+            {
+                Form1 myParent = (Form1)this.Parent;
+                myParent.hideAll();
+                myParent.userControlIslemBitisEkrani1.Show();
+            }
+            else
+            {
+                MessageBox.Show("İşlem Başarısız");
+            }
+
         }    
         
         private void label1_Click(object sender, EventArgs e)
@@ -74,6 +83,14 @@ namespace GelismisATM
             deposit();
         }
 
-     
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 myParent = (Form1)this.Parent;
+            myParent.hideAll();
+            myParent.userControlAccounts1.Show();
+            //string sqlNextBalance= "SELECT nextBalance FROM Transactionn ORDER BY transaction_date DESC LIMIT 1";
+            myParent.userControlAccounts1.getAllofAccounts();
+        }
     }
 }

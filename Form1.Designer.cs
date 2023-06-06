@@ -32,14 +32,11 @@ namespace GelismisATM
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblMenuUsername = new System.Windows.Forms.Label();
             this.lblMenuWelcome = new System.Windows.Forms.Label();
-            this.btnMenuStock = new System.Windows.Forms.Button();
             this.btnMenuAccounts = new System.Windows.Forms.Button();
             this.btnMenuWitdraw = new System.Windows.Forms.Button();
             this.btnMenuDeposit = new System.Windows.Forms.Button();
             this.btnMenuTransfer = new System.Windows.Forms.Button();
-            this.btnMenuSettings = new System.Windows.Forms.Button();
             this.btnMenuExit = new System.Windows.Forms.Button();
-            this.btnMenuCurrency = new System.Windows.Forms.Button();
             this.userControlWithdraw1 = new GelismisATM.UserControlWithdraw();
             this.userControlDeposit1 = new GelismisATM.UserControlDeposit();
             this.userControlAccountDetails1 = new GelismisATM.UserControlAccountDetails();
@@ -47,6 +44,9 @@ namespace GelismisATM
             this.userControlAccounts1 = new GelismisATM.UserControlAccounts();
             this.userControlAdminAdd1 = new GelismisATM.UserControlAdminAdd();
             this.userControlLogin1 = new GelismisATM.UserControlLogin();
+            this.userControlIslemBitisEkrani1 = new GelismisATM.UserControlIslemBitisEkrani();
+            this.userControlslemOzeti1 = new GelismisATM.UserControlslemOzeti();
+            this.userControlParaTransferi1 = new GelismisATM.UserControlParaTransferi();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,12 +55,10 @@ namespace GelismisATM
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblMenuUsername);
             this.panel1.Controls.Add(this.lblMenuWelcome);
-            this.panel1.Controls.Add(this.btnMenuStock);
             this.panel1.Controls.Add(this.btnMenuAccounts);
             this.panel1.Controls.Add(this.btnMenuWitdraw);
             this.panel1.Controls.Add(this.btnMenuDeposit);
             this.panel1.Controls.Add(this.btnMenuTransfer);
-            this.panel1.Controls.Add(this.btnMenuSettings);
             this.panel1.Controls.Add(this.btnMenuExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -91,21 +89,6 @@ namespace GelismisATM
             this.lblMenuWelcome.TabIndex = 8;
             this.lblMenuWelcome.Text = "Hoş Geldin";
             this.lblMenuWelcome.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // btnMenuStock
-            // 
-            this.btnMenuStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.btnMenuStock.Enabled = false;
-            this.btnMenuStock.FlatAppearance.BorderSize = 0;
-            this.btnMenuStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMenuStock.ForeColor = System.Drawing.Color.White;
-            this.btnMenuStock.Location = new System.Drawing.Point(15, 475);
-            this.btnMenuStock.Name = "btnMenuStock";
-            this.btnMenuStock.Size = new System.Drawing.Size(250, 60);
-            this.btnMenuStock.TabIndex = 7;
-            this.btnMenuStock.Text = "HİSSE İŞLEMLERİ";
-            this.btnMenuStock.UseVisualStyleBackColor = false;
             // 
             // btnMenuAccounts
             // 
@@ -167,21 +150,6 @@ namespace GelismisATM
             this.btnMenuTransfer.UseVisualStyleBackColor = false;
             this.btnMenuTransfer.Click += new System.EventHandler(this.btnMenuTransfer_Click);
             // 
-            // btnMenuSettings
-            // 
-            this.btnMenuSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.btnMenuSettings.FlatAppearance.BorderSize = 0;
-            this.btnMenuSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMenuSettings.ForeColor = System.Drawing.Color.White;
-            this.btnMenuSettings.Location = new System.Drawing.Point(15, 550);
-            this.btnMenuSettings.Name = "btnMenuSettings";
-            this.btnMenuSettings.Size = new System.Drawing.Size(250, 60);
-            this.btnMenuSettings.TabIndex = 1;
-            this.btnMenuSettings.Text = "AYARLAR";
-            this.btnMenuSettings.UseVisualStyleBackColor = false;
-            this.btnMenuSettings.Visible = false;
-            // 
             // btnMenuExit
             // 
             this.btnMenuExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
@@ -196,20 +164,6 @@ namespace GelismisATM
             this.btnMenuExit.Text = "ÇIKIŞ";
             this.btnMenuExit.UseVisualStyleBackColor = false;
             this.btnMenuExit.Click += new System.EventHandler(this.btnMenuExit_Click);
-            // 
-            // btnMenuCurrency
-            // 
-            this.btnMenuCurrency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.btnMenuCurrency.FlatAppearance.BorderSize = 0;
-            this.btnMenuCurrency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenuCurrency.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMenuCurrency.ForeColor = System.Drawing.Color.White;
-            this.btnMenuCurrency.Location = new System.Drawing.Point(15, 400);
-            this.btnMenuCurrency.Name = "btnMenuCurrency";
-            this.btnMenuCurrency.Size = new System.Drawing.Size(250, 60);
-            this.btnMenuCurrency.TabIndex = 6;
-            this.btnMenuCurrency.Text = "DÖVİZ İŞLEMLERİ";
-            this.btnMenuCurrency.UseVisualStyleBackColor = false;
             // 
             // userControlWithdraw1
             // 
@@ -267,12 +221,42 @@ namespace GelismisATM
             this.userControlLogin1.Size = new System.Drawing.Size(1024, 768);
             this.userControlLogin1.TabIndex = 13;
             // 
+            // userControlIslemBitisEkrani1
+            // 
+            this.userControlIslemBitisEkrani1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlIslemBitisEkrani1.Location = new System.Drawing.Point(286, 1);
+            this.userControlIslemBitisEkrani1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlIslemBitisEkrani1.Name = "userControlIslemBitisEkrani1";
+            this.userControlIslemBitisEkrani1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlIslemBitisEkrani1.TabIndex = 14;
+            // 
+            // userControlslemOzeti1
+            // 
+            this.userControlslemOzeti1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlslemOzeti1.Location = new System.Drawing.Point(286, 0);
+            this.userControlslemOzeti1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlslemOzeti1.Name = "userControlslemOzeti1";
+            this.userControlslemOzeti1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlslemOzeti1.TabIndex = 15;
+            // 
+            // userControlParaTransferi1
+            // 
+            this.userControlParaTransferi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
+            this.userControlParaTransferi1.Location = new System.Drawing.Point(286, 1);
+            this.userControlParaTransferi1.Margin = new System.Windows.Forms.Padding(2);
+            this.userControlParaTransferi1.Name = "userControlParaTransferi1";
+            this.userControlParaTransferi1.Size = new System.Drawing.Size(1024, 768);
+            this.userControlParaTransferi1.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(1314, 768);
+            this.Controls.Add(this.userControlParaTransferi1);
+            this.Controls.Add(this.userControlslemOzeti1);
+            this.Controls.Add(this.userControlIslemBitisEkrani1);
             this.Controls.Add(this.userControlLogin1);
             this.Controls.Add(this.userControlAdminAdd1);
             this.Controls.Add(this.userControlAccounts1);
@@ -280,7 +264,6 @@ namespace GelismisATM
             this.Controls.Add(this.userControlAccountDetails1);
             this.Controls.Add(this.userControlDeposit1);
             this.Controls.Add(this.userControlWithdraw1);
-            this.Controls.Add(this.btnMenuCurrency);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -290,6 +273,11 @@ namespace GelismisATM
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        public GelismisATM.UserControlslemOzeti userControlslemOzeti1;
+        public GelismisATM.UserControlParaTransferi userControlParaTransferi1;
+
+        public GelismisATM.UserControlIslemBitisEkrani userControlIslemBitisEkrani1;
 
         public GelismisATM.UserControlAdminAdd userControlAdminAdd1;
 
@@ -302,7 +290,7 @@ namespace GelismisATM
 
         public GelismisATM.UserControlAccountDetails userControlAccountDetails1;
 
-        private GelismisATM.UserControlLogin userControlLogin1;
+        public GelismisATM.UserControlLogin userControlLogin1;
 
         #endregion
 
@@ -312,9 +300,6 @@ namespace GelismisATM
         private System.Windows.Forms.Button btnMenuWitdraw;
         private System.Windows.Forms.Button btnMenuDeposit;
         private System.Windows.Forms.Button btnMenuTransfer;
-        private System.Windows.Forms.Button btnMenuSettings;
-        private System.Windows.Forms.Button btnMenuStock;
-        private System.Windows.Forms.Button btnMenuCurrency;
         private System.Windows.Forms.Label lblMenuWelcome;
         public System.Windows.Forms.Label lblMenuUsername;
     }

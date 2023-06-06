@@ -23,7 +23,7 @@ namespace GelismisATM
             SQLiteParameter[] param = { param1 };
 
             dt = dbOperations.accessSQLdata(sql, param);
-
+            comboBox1.Items.Clear();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 comboBox1.Items.Add(dt.Rows[i]["account_name"].ToString());
@@ -34,14 +34,20 @@ namespace GelismisATM
         public void withdraw()
         {
             string choosenAccName = comboBox1.GetItemText(comboBox1.SelectedItem);
-            int val = Convert.ToInt32(textBox1.Text);
+            int val = 0;
+            try {
+                val = Convert.ToInt32(textBox1.Text);
+            }
+            catch (Exception e) {
+                MessageBox.Show("Miktar yanlış.");
+            }
 
             DataRow[] filteredRows = dt.Select("account_name ='" + choosenAccName + "'");
 
             string choosenID = filteredRows[0]["account_id"].ToString();
             int totalAmount = Convert.ToInt32(filteredRows[0]["account_balance"]);
-            int newVal = totalAmount - val; 
-            
+            int newVal = totalAmount - val;
+
             string sql = "UPDATE Accounts SET account_balance=@newAmount WHERE account_id=@id";
 
             SQLiteParameter amountParam = new SQLiteParameter("newAmount", newVal);
@@ -49,12 +55,12 @@ namespace GelismisATM
 
             SQLiteParameter[] parameters = { idParam, amountParam };
             dbOperations.executeSQL(sql, parameters);
-            
+
             string query = "INSERT INTO Transactionn(transaction_date, transaction_type, targetIBAN, amount, nextBalance, account_id) VALUES(@date, @type,@iban ,@amount, @balance, @id)";
 
-            string date = DateTime.Now.ToString();
+            DateTime date = DateTime.Now;
             SQLiteParameter paramName = new SQLiteParameter("date", date);
-            SQLiteParameter paramType = new SQLiteParameter("type", "paraCekme");
+            SQLiteParameter paramType = new SQLiteParameter("type", "Para Çekme");
             SQLiteParameter paramIban = new SQLiteParameter("iban", filteredRows[0]["iban"].ToString());
             SQLiteParameter paramAmount = new SQLiteParameter("amount", totalAmount);
             SQLiteParameter paramBalance = new SQLiteParameter("balance", totalAmount - val);
@@ -62,14 +68,23 @@ namespace GelismisATM
 
 
             SQLiteParameter[] prms = { paramName, paramType, paramIban, paramAmount, paramBalance, paramId };
-            
-            dbOperations.executeSQL(query, prms);
+
+            if (dbOperations.executeSQL(query, prms)) {
+                Form1 myParent = (Form1)this.Parent;
+                myParent.hideAll();
+                myParent.userControlIslemBitisEkrani1.Show();
+            }
+            else
+            {
+                MessageBox.Show("İşlem Başarısız");
+            }
 
 
-        }
+            }
         private void button8_Click(object sender, EventArgs e)
         {
             withdraw();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -79,12 +94,12 @@ namespace GelismisATM
 
         private void button2_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            textBox1.Text = "150";
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            textBox1.Text = "200";
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -101,5 +116,36 @@ namespace GelismisATM
         {
             throw new System.NotImplementedException();
         }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form1 myParent = (Form1)this.Parent;
+            myParent.hideAll();
+            myParent.userControlAccounts1.Show();
+            //string sqlNextBalance= "SELECT nextBalance FROM Transactionn ORDER BY transaction_date DESC LIMIT 1";
+            myParent.userControlAccounts1.getAllofAccounts();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "50";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "100";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "500";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "1000";
+        }
+
+      
     }
 }

@@ -136,6 +136,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "GERİ DÖN";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -151,6 +152,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "İLERİ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
@@ -181,7 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(13)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
@@ -203,15 +205,15 @@
         private System.Windows.Forms.Label label6;
         
         #endregion
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox comboBox1;
     }
 }

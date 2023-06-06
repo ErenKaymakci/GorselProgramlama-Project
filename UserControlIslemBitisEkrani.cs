@@ -15,6 +15,8 @@ namespace GelismisATM
         public UserControlIslemBitisEkrani()
         {
             InitializeComponent();
+            pictureBox1.ImageLocation =
+                "https://openclipart.org/image/2400px/svg_to_png/167549/Kliponious-green-tick.png";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,14 +29,20 @@ namespace GelismisATM
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form1 myParent = (Form1)this.Parent;
+            myParent.hideAll();
+            myParent.userControlAccounts1.Show();
+            //string sqlNextBalance= "SELECT nextBalance FROM Transactionn ORDER BY transaction_date DESC LIMIT 1";
+            myParent.userControlAccounts1.getAllofAccounts();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

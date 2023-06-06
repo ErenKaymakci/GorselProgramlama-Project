@@ -36,7 +36,7 @@ namespace GelismisATM
 
         private void fillTransactionData(Panel[] pnls, Label[] lbls)
         {
-            string sql = "SELECT * FROM Transact WHERE Transact.account_id=@account_id ORDER BY Transact.transact_date DESC LIMIT 3";
+            string sql = "SELECT * FROM Transactionn WHERE Transactionn.account_id=@account_id ORDER BY Transactionn.transaction_date DESC LIMIT 3";
 
             SQLiteParameter currentAccount = new SQLiteParameter("account_id", User.currentAccountID);
             SQLiteParameter[] param = { currentAccount };
@@ -47,25 +47,32 @@ namespace GelismisATM
             {
                 for (int i = 0; i < dt_transaction.Rows.Count; i += 1)
                 {
-                    String transaction_date = dt_transaction.Rows[i]["transact_date"].ToString();
+                    String transaction_date = dt_transaction.Rows[i]["transaction_date"].ToString();
                     DateTime dateTime = DateTime.Parse(transaction_date);
                     lbls[i * 4].Text = dateTime.ToString("dd MMM yyyy HH:mm");
 
-                    string transaction_type = dt_transaction.Rows[i]["transact_type"].ToString();
-                    lbls[i * 4 + 1].Text = transaction_type + "   " + dt_transaction.Rows[i]["targetIBAN"].ToString();
-
+                    string transaction_type = dt_transaction.Rows[i]["transaction_type"].ToString();
+                    
                     string transaction_amount = dt_transaction.Rows[i]["amount"].ToString();
-                    if (transaction_type == "Para Transferi" | transaction_type == "Para Çekme")
+                    if (transaction_type == "Para Transferi")
                     {
                         lbls[i * 4 + 2].ForeColor = Color.Red;
                         lbls[i * 4 + 2].Text = "-" + transaction_amount + " " + labelCurrencyData.Text;
+                        lbls[i * 4 + 1].Text = transaction_type + "  -  " + dt_transaction.Rows[i]["targetIBAN"].ToString();
+                    }
+                    else if (transaction_type == "Para Çekme")
+                    {
+                        lbls[i * 4 + 2].ForeColor = Color.Red;
+                        lbls[i * 4 + 2].Text = "-" + transaction_amount + " " + labelCurrencyData.Text;
+                        lbls[i * 4 + 1].Text = transaction_type;
                     }
                     else
                     {
                         lbls[i * 4 + 2].ForeColor = Color.Green;
                         lbls[i * 4 + 2].Text = transaction_amount + " " + labelCurrencyData.Text;
+                        lbls[i * 4 + 1].Text = transaction_type;
                     }
-                    
+
                     lbls[i * 4 + 3].Text = "Mevcut Bakiye: " + dt_transaction.Rows[i]["nextBalance"].ToString() + " " + labelCurrencyData.Text;
 
                     pnls[i].Visible = true;

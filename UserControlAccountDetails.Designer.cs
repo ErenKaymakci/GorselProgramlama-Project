@@ -56,9 +56,9 @@
             this.labelTransaction3Date = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.labelTransactionNotFound = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelAccountNameData = new System.Windows.Forms.Label();
+            this.labelTransactionNotFound = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRIban)).BeginInit();
             this.panelTransaction1.SuspendLayout();
             this.panelTransaction2.SuspendLayout();
@@ -211,9 +211,9 @@
             this.labelTransaction1Balance.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelTransaction1Balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransaction1Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.labelTransaction1Balance.Location = new System.Drawing.Point(598, 40);
+            this.labelTransaction1Balance.Location = new System.Drawing.Point(649, 40);
             this.labelTransaction1Balance.Name = "labelTransaction1Balance";
-            this.labelTransaction1Balance.Size = new System.Drawing.Size(302, 40);
+            this.labelTransaction1Balance.Size = new System.Drawing.Size(251, 40);
             this.labelTransaction1Balance.TabIndex = 3;
             this.labelTransaction1Balance.Text = "GÜNCEL BAKİYE: 23.000 €";
             this.labelTransaction1Balance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -223,9 +223,9 @@
             this.labelTransaction1Amount.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelTransaction1Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransaction1Amount.ForeColor = System.Drawing.Color.Red;
-            this.labelTransaction1Amount.Location = new System.Drawing.Point(598, 0);
+            this.labelTransaction1Amount.Location = new System.Drawing.Point(649, 0);
             this.labelTransaction1Amount.Name = "labelTransaction1Amount";
-            this.labelTransaction1Amount.Size = new System.Drawing.Size(302, 40);
+            this.labelTransaction1Amount.Size = new System.Drawing.Size(251, 40);
             this.labelTransaction1Amount.TabIndex = 2;
             this.labelTransaction1Amount.Text = "-50.0 €";
             this.labelTransaction1Amount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -237,7 +237,7 @@
             this.labelTransaction1Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.labelTransaction1Title.Location = new System.Drawing.Point(98, 0);
             this.labelTransaction1Title.Name = "labelTransaction1Title";
-            this.labelTransaction1Title.Size = new System.Drawing.Size(500, 80);
+            this.labelTransaction1Title.Size = new System.Drawing.Size(551, 80);
             this.labelTransaction1Title.TabIndex = 1;
             this.labelTransaction1Title.Text = "PARA ÇEKME";
             this.labelTransaction1Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -271,9 +271,9 @@
             this.labelTransaction2Balance.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelTransaction2Balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransaction2Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.labelTransaction2Balance.Location = new System.Drawing.Point(598, 40);
+            this.labelTransaction2Balance.Location = new System.Drawing.Point(649, 40);
             this.labelTransaction2Balance.Name = "labelTransaction2Balance";
-            this.labelTransaction2Balance.Size = new System.Drawing.Size(302, 40);
+            this.labelTransaction2Balance.Size = new System.Drawing.Size(251, 40);
             this.labelTransaction2Balance.TabIndex = 3;
             this.labelTransaction2Balance.Text = "GÜNCEL BAKİYE: 23.050 €";
             this.labelTransaction2Balance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -283,9 +283,9 @@
             this.labelTransaction2Amount.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelTransaction2Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransaction2Amount.ForeColor = System.Drawing.Color.YellowGreen;
-            this.labelTransaction2Amount.Location = new System.Drawing.Point(598, 0);
+            this.labelTransaction2Amount.Location = new System.Drawing.Point(649, 0);
             this.labelTransaction2Amount.Name = "labelTransaction2Amount";
-            this.labelTransaction2Amount.Size = new System.Drawing.Size(302, 40);
+            this.labelTransaction2Amount.Size = new System.Drawing.Size(251, 40);
             this.labelTransaction2Amount.TabIndex = 2;
             this.labelTransaction2Amount.Text = "+176.0 €";
             this.labelTransaction2Amount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -297,7 +297,7 @@
             this.labelTransaction2Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.labelTransaction2Title.Location = new System.Drawing.Point(98, 0);
             this.labelTransaction2Title.Name = "labelTransaction2Title";
-            this.labelTransaction2Title.Size = new System.Drawing.Size(500, 80);
+            this.labelTransaction2Title.Size = new System.Drawing.Size(551, 80);
             this.labelTransaction2Title.TabIndex = 1;
             this.labelTransaction2Title.Text = "PARA TRANSFERI - {hedef.iban}";
             this.labelTransaction2Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,9 +331,9 @@
             this.labelTransaction3Balance.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelTransaction3Balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransaction3Balance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
-            this.labelTransaction3Balance.Location = new System.Drawing.Point(598, 40);
+            this.labelTransaction3Balance.Location = new System.Drawing.Point(649, 40);
             this.labelTransaction3Balance.Name = "labelTransaction3Balance";
-            this.labelTransaction3Balance.Size = new System.Drawing.Size(302, 40);
+            this.labelTransaction3Balance.Size = new System.Drawing.Size(251, 40);
             this.labelTransaction3Balance.TabIndex = 3;
             this.labelTransaction3Balance.Text = "GÜNCEL BAKİYE: 23.226 €";
             this.labelTransaction3Balance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -343,9 +343,9 @@
             this.labelTransaction3Amount.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelTransaction3Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransaction3Amount.ForeColor = System.Drawing.Color.Red;
-            this.labelTransaction3Amount.Location = new System.Drawing.Point(598, 0);
+            this.labelTransaction3Amount.Location = new System.Drawing.Point(649, 0);
             this.labelTransaction3Amount.Name = "labelTransaction3Amount";
-            this.labelTransaction3Amount.Size = new System.Drawing.Size(302, 40);
+            this.labelTransaction3Amount.Size = new System.Drawing.Size(251, 40);
             this.labelTransaction3Amount.TabIndex = 2;
             this.labelTransaction3Amount.Text = "-500.0 €";
             this.labelTransaction3Amount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -357,7 +357,7 @@
             this.labelTransaction3Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(14)))), ((int)(((byte)(23)))));
             this.labelTransaction3Title.Location = new System.Drawing.Point(98, 0);
             this.labelTransaction3Title.Name = "labelTransaction3Title";
-            this.labelTransaction3Title.Size = new System.Drawing.Size(500, 80);
+            this.labelTransaction3Title.Size = new System.Drawing.Size(551, 80);
             this.labelTransaction3Title.TabIndex = 1;
             this.labelTransaction3Title.Text = "DÖVİZ ALIMI - ₺";
             this.labelTransaction3Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -407,18 +407,6 @@
             this.panel4.Size = new System.Drawing.Size(846, 209);
             this.panel4.TabIndex = 15;
             // 
-            // labelTransactionNotFound
-            // 
-            this.labelTransactionNotFound.AutoSize = true;
-            this.labelTransactionNotFound.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTransactionNotFound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.labelTransactionNotFound.Location = new System.Drawing.Point(339, 411);
-            this.labelTransactionNotFound.Name = "labelTransactionNotFound";
-            this.labelTransactionNotFound.Size = new System.Drawing.Size(354, 26);
-            this.labelTransactionNotFound.TabIndex = 16;
-            this.labelTransactionNotFound.Text = "Hesaba ait işlem bulunmamaktadır.";
-            this.labelTransactionNotFound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -443,6 +431,18 @@
             this.labelAccountNameData.Text = "Döviz Hesabım";
             this.labelAccountNameData.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // labelTransactionNotFound
+            // 
+            this.labelTransactionNotFound.AutoSize = true;
+            this.labelTransactionNotFound.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTransactionNotFound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
+            this.labelTransactionNotFound.Location = new System.Drawing.Point(339, 411);
+            this.labelTransactionNotFound.Name = "labelTransactionNotFound";
+            this.labelTransactionNotFound.Size = new System.Drawing.Size(354, 26);
+            this.labelTransactionNotFound.TabIndex = 16;
+            this.labelTransactionNotFound.Text = "Hesaba ait işlem bulunmamaktadır.";
+            this.labelTransactionNotFound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UserControlAccountDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,7 +466,6 @@
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

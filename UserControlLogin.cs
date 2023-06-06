@@ -34,24 +34,24 @@ namespace GelismisATM
                 string currentUser = dt.Rows[0]["name"].ToString();
                 
                 Form1 myParent = (Form1)this.Parent;
-
-                myParent.setVisibleBtns(true);
                 myParent.lblMenuUsername.Text = currentUser;
                 
+                myParent.hideAll();
                 if (currentUser == "admin")
                 {
                     myParent.userControlAdminPage1.Show();
                 }
                 else
                 {
+                    myParent.setVisibleBtns(true);
+                    User.userID = dt.Rows[0]["user_id"].ToString();;
+                    User.userName = currentUser;
+                    User.userTC = dt.Rows[0]["tc"].ToString();
+                    
+                    myParent.userControlAccounts1.getAllofAccounts();
                     myParent.userControlAccounts1.Show();
                 }
-                myParent.hideAll();
-                User.userID = dt.Rows[0]["user_id"].ToString();;
-                User.userName = currentUser;
-                User.userTC = dt.Rows[0]["tc"].ToString();
-                    
-                myParent.userControlAccounts1.getAllofAccounts();
+                
             }
             else
             {
